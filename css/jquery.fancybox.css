@@ -136,8 +136,8 @@
   margin: 44px 0 44px;
   border-width: 0;
   vertical-align: middle;
-  text-align: left;
-  background-color: #fff;
+  /* text-align: left; */
+  /* background-color: #fff; */
   overflow: auto;
   box-sizing: border-box; }
 
@@ -260,8 +260,8 @@
 
 .fancybox-close-small {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
   width: 60px;
   height: 60px;
   padding: 0;

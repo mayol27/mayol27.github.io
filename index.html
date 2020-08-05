@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="css/font_saira.css">
   <link rel="stylesheet" href="css/font_muli.css">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <!-- image popup -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
@@ -191,7 +193,7 @@
           <a href="mailto:johnlloydmayol@gmail.com">johnlloydmayol@gmail.com</a>
         </div>
         <p class="lead mb-5">
-          A skilled IT affluent young professional with more than 1 year of experience in Software Development & Design, Hardware and Software Maintenance and Repair, and Graphics Design with enhancing in PHP Programming Languages (Laravel, Codeigniter, and Wordpress), CSS, Bootstrap, CSS, and HTML.
+          A skilled IT affluent young professional with more than 1 years of experience in Software Development & Design, Hardware and Software Maintenance and Repair, and Graphics Design with enhancing in Programming Languages (Laravel, CodeIgniter, Wordpress, CSS, Bootstrap, HTML, GIT, and Yarn).
         </p>
         <div class="social-icons mb-3">
           <a href="https://github.com/mayol27" target="_blank">
@@ -229,7 +231,7 @@
                   Wordpress (ACF, Elementor, and Ninja Form)
                 </li>
                 <li>
-                  Editing Photo (Adobe Photoshop and Adobe Illustrator)
+                  Editing Photo (Adobe Photoshop, Adobe Lightroom, and Adobe Illustrator)
                 </li>
               </ul>
               + <b>Maintaining client website – BUKKENOH 物件王</b> 
@@ -343,14 +345,8 @@
             <div class="col-lg-4">
               <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
                 <li>SASS</li>
-                <li>Bootstrap</li>
                 <li>CSS</li>
                 <li>HTML</li>
-                <li>GIT</li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
                 <li>Yarn</li>
                 <li>Troubleshoot</li>
               </ul>
@@ -365,6 +361,7 @@
               <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
                 <li>Adobe Photoshop</li>
                 <li>Adobe Illustrator</li>
+                <li>Adobe Lightroom</li>
                 <li>Filmora Wondershare</li>
               </ul>
             </div>
@@ -376,9 +373,30 @@
           <div class="row">
             <div class="col-lg-4">
               <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
+                <li>Wordpress</li>
+                <li>GIT</li>
+                <li>Bootstrap</li>
+                <li>Visual Studio Code</li>
+                <li>PHPStrom</li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
+                <li>Microsoft Office</li>
                 <li>Slack</li>
                 <li>Backlog</li>
                 <li>Skype</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+<!-- OS -->
+        <div class="subheading mb-3">OS</div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4">
+              <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
+                <li>Windows</li>
               </ul>
             </div>
           </div>
@@ -398,7 +416,9 @@
           <li>
             <i class="fa-li fa fa-check"></i>
             Orginization
+            
             <ul style="list-style-type:disc;" >
+              
               <li>GDG Cebu – Google Developers Group (March 2017 – Present)</li>
               <li>University of Cebu – Association of Working Scholar (AWS) (April 2015 – October 2019)</li>
               <li>University of Cebu – Philippines Scociety of Information Technology Student (PSITS) (June 2015 – October 2019)</li>
@@ -438,18 +458,33 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
         <h2 class="mb-5">Certifications</h2>
+        <div style="display: none;" id="Certificate-MOOC-2018">
+          <img src="img/Certificate-MOOC 2018.jpg" width="100%"/>
+        </div>
+        <div style="display: none;" id="5th_UC_ICT_201">
+          <img src="img/5th UC_ICT_2017.jpg" width="100%"/>
+        </div>
+        <div style="display: none;" id="4th_UC_ICT_Congress_2016">
+          <img src="img/4th UC_ICT Congress_2016.jpg" width="100%"/>
+        </div>
         <ul class="fa-ul mb-0">
           <li>
             <i class="fa-li fa fa-certificate text-warning"></i>
-            Building Entrepreneurial Ecosystem to Enhance Higher Education Value-Added for Better Graduate Employability (BEEHIVE) - MOOC (2018)
+            <a data-fancybox data-src="#Certificate-MOOC-2018" href="javascript:;">
+              Building Entrepreneurial Ecosystem to Enhance Higher Education Value-Added for Better Graduate Employability (BEEHIVE) - MOOC (2018)
+            </a>
           </li>
           <li>
             <i class="fa-li fa fa-certificate text-warning"></i>
-            5th UC-ICT Congress “Sharpening Junior Mobile Technologists” (2017)
+            <a data-fancybox data-src="#5th_UC_ICT_201" href="javascript:;">
+              5th UC-ICT Congress “Sharpening Junior Mobile Technologists” (2017)
+            </a>
           </li>
           <li>
             <i class="fa-li fa fa-certificate text-warning"></i>
-            4th UC-ICT Congress “Shaping up Creative Minds through Great UX Design” (2016)
+            <a data-fancybox data-src="#4th_UC_ICT_Congress_2016" href="javascript:;">
+              4th UC-ICT Congress “Shaping up Creative Minds through Great UX Design” (2016)
+            </a>
           </li>
         </ul>
       </div>
@@ -493,6 +528,11 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+
+  <!-- popup image -->
+  <!-- <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
 
 </body>
 

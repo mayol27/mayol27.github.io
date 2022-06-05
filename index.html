@@ -1,453 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
+    <title>John Lloyd Segismar Mayol</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <link rel="stylesheet" href="css/style.css" />
 
-  <title>John Lloyd Segismar Mayol</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Custom fonts for this template -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font_saira.css" />
+    <link rel="stylesheet" href="css/font_muli.css" />
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <!-- image popup -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet" />
+  </head>
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link rel="stylesheet" href="css/font_saira.css">
-  <link rel="stylesheet" href="css/font_muli.css">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <!-- image popup -->
-  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+  <body id="page-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      id="sideNav"
+    >
+      <a class="navbar-brand js-scroll-trigger" href="#">
+        <span class="d-block d-lg-none">John Lloyd Segismar Mayol</span>
+        <span class="d-none d-lg-block">
+          <img
+            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            id="myImg"
+            src="img/2x2.jpg"
+            alt="John Lloyd Segismar Mayol - BSIT"
+          />
+        </span>
+      </a>
 
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#">
-      <span class="d-block d-lg-none">John Lloyd Segismar Mayol</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" id="myImg" src="img/2x2.jpg" alt="John Lloyd Segismar Mayol - BSIT">
-      </span>
-    </a>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <span class="close">×</span>
-      <img class="modal-content" id="img01">
-      <div id="caption"></div>
-    </div>
-
-    <script>
-    // Get the modal
-    var modal = document.getElementById('myModal');
-    
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById('myImg');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-      modal.style.display = "none";
-    }
-    </script>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Certifications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#Reference">Reference</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div style="position: absolute; top: 0;">
-        <a href="storage.html" style="color: white; cursor: default;">sada</a>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
       </div>
-      <div class="w-100">
-        <h1 class="mb-0">John Lloyd Segismar
-          <span class="text-primary">Mayol</span>
-        </h1>
-        <div class="subheading mb-5">
-          Bachelor of Science in Information Technology
-          <br>
-          5104 Proper Tunghaan Minglanilla, Cebu 6046 · (+63) 943-221-9155 ·
-          <a href="mailto:johnlloydmayol@gmail.com">johnlloydmayol@gmail.com</a>
-        </div>
-        <p class="lead mb-5">
-          A skilled IT affluent young professional with experience in Software Development & Design, Hardware and Software Maintenance and Repair, and Graphics Design with enhancing in Programming Languages.
-        </p>
-        <div class="social-icons mb-3">
-          <a href="https://github.com/mayol27" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/john-lloyd-mayol" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://join.skype.com/invite/XIuGRihGz2Zf?sendfile" target="_blank">
-            <i class="fab fa-skype"></i>
-          </a>
-        </div>
-        <div>
-          <a href="resume_johnlloydmayol.zip">
-            <button type="button" class="btn " style="background-color: rgb(221, 98, 27); color: white;">
-                <i class="fa fa-download"></i>&nbsp; Download Resume</button></a>
-        </div>
-      </div>
-    </section>
 
-    <hr class="m-0">
-<!-- about me -->
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
-        <!-- Programming -->
-        <div class="subheading mb-3">Programming</div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-4">
-              <ul class="fa-ul mb-0" style="list-style-type:disc;">
-                <li>Angular.js</li>
-                <li>CodeIgniter</li>
-                <li>CSS</li>
-                <li>Express.js</li>
-                <li>HTML</li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
-                <li>JavaScript</li>
-                <li>Laravel</li>
-                <li>MYSQL</li>
-                <li>Node.js</li>
-                <li>PHP</li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
-                <li>Pug.js</li>
-                <li>React.js</li>
-                <li>SASS</li>
-                <li>Vue.js</li>
-                <li>YARN</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Tools -->
-        <div class="subheading mb-3">Design</div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-4">
-              <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
-                <li>Adobe Illustrator</li>
-                <li>Adobe Lightroom</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe XD</li>
-                <li>Filmora Wondershare</li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
-                <li>Figma</li>
-                <li>MockFlow</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Tools -->
-        <div class="subheading mb-3">Tools</div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-4">
-              <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
-                <li>Backlog</li>
-                <li>Bootstrap</li>
-                <li>cPanel</li>
-                <li>Chatwork</li>
-                <li>GIT</li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
-                <li>Github</li>
-                <li>GitLab</li>
-                <li>Glip</li>
-                <li>Nginx</li>
-                <li>Microsoft Office</li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
-                <li>PHPStorm</li>
-                <li>Search Engine Optimization</li>
-                <li>Skype</li>
-                <li>Slack</li>
-                <li>Storybook</li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
-                <li>Tailwind</li>
-                <li>Visual Studio Code</li>
-                <li>Wordpress</li>
-                <li>Zoom</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- OS -->
-        <div class="subheading mb-3">OS</div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-4">
-              <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
-                <li>Windows</li>
-                <li>Mac</li>
-                <li>Linux</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- others -->
-        <div class="subheading mb-3">Others</div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-4">
-              <ul class="fa-ul mb-0 mb-3 " style="list-style-type:disc;">
-                <li>Network - basic</li>
-                <li>Troubleshooting</li>
-                <li>Photography</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Personality -->
-        <div class="subheading mb-3 ">about me</div>
-        <ul class="fa-ul mb-0 mb-3" >
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Personality
-            <ul style="list-style-type:disc;" >
-              <li>Communication</li>
-              <li>Creativity</li>
-              <li>Organization</li>
-              <li>Social</li>
-              <li>Team player</li>
-            </ul>
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Communication
-            <ul style="list-style-type:disc;" >
-              <li>Bisaya</li>
-              <li>English</li>
-              <li>Tagalog</li>
-            </ul>
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Organization
-            <ul style="list-style-type:disc;" >
-              <li>GDG Cebu – Google Developers Group (March 2017 – Present)</li>
-              <li>University of Cebu – Association of Working Scholar (AWS) (April 2015 – October 2019)</li>
-              <li>University of Cebu – Philippines Scociety of Information Technology Student (PSITS) (June 2015 – October 2019)</li>
-            </ul>
-          </li>
-        </ul>
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
 
-        <div class="subheading mb-3 ">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        };
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+          modal.style.display = "none";
+        };
+      </script>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Browser Testing &amp; Debugging
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience"
+              >Experience</a
+            >
           </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Responsive Web Design
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education"
+              >Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards"
+              >Certifications</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Reference"
+              >Reference</a
+            >
           </li>
         </ul>
       </div>
-    </section>
+    </nav>
 
-    <hr class="m-0">
-<!-- experience -->
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
-        <!-- DNA Micro Software Inc. -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">DNA Micro Software Inc.</h3>
-            <div class="subheading mb-3">UI/UX Designer</div>
-            <p>
-              + <b>Take responsibility on responsive web and mobile</b>
-              <br>
-              + <b>Testing and improving the design of the website</b>
-              <br>
-              + <b>Maintaining the appearance of websites by enforcing content standards</b>
-              <br>
-              + <b>Determine how users interact with products</b>
-              <br>
-              + <b>Identify and troubleshoot UI/UX problems</b>
-            </p>
-              <ul>
+    <div class="container-fluid p-0">
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="about"
+      >
+        <div style="position: absolute; top: 0">
+          <a href="storage.html" style="color: white; cursor: default">sada</a>
+        </div>
+        <div class="w-100">
+          <h1 class="mb-0">
+            John Lloyd Segismar
+            <span class="text-primary">Mayol</span>
+          </h1>
+          <div class="subheading mb-5">
+            Bachelor of Science in Information Technology
+            <br />
+            PHILIPPINES · (+63) 943-221-9155 ·
+            <a href="mailto:johnlloydmayol@gmail.com"
+              >johnlloydmayol@gmail.com</a
+            >
+          </div>
+          <p class="lead mb-5">
+            A skilled IT affluent young professional with experience in Software
+            Development & Design, Hardware and Software Maintenance and Repair,
+            and Graphics Design with enhancing in Programming Languages.
+          </p>
+          <div class="social-icons mb-3">
+            <a href="https://github.com/mayol27" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/john-lloyd-mayol"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://join.skype.com/invite/XIuGRihGz2Zf?sendfile"
+              target="_blank"
+            >
+              <i class="fab fa-skype"></i>
+            </a>
+          </div>
+          <div>
+            <a href="resume_johnlloydmayol.zip">
+              <button
+                type="button"
+                class="btn"
+                style="background-color: rgb(221, 98, 27); color: white"
+              >
+                <i class="fa fa-download"></i>&nbsp; Download Resume
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0" />
+      <!-- about me -->
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="skills"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Skills</h2>
+          <!-- Programming -->
+          <div class="subheading mb-3">Programming</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4">
+                <ul class="fa-ul mb-0" style="list-style-type: disc">
+                  <li>Angular.js</li>
+                  <li>CodeIgniter</li>
+                  <li>CSS</li>
+                  <li>Express.js</li>
+                  <li>HTML</li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <ul class="fa-ul mb-0 mb-3" style="list-style-type: disc">
+                  <li>JavaScript</li>
+                  <li>Laravel</li>
+                  <li>MYSQL</li>
+                  <li>Node.js</li>
+                  <li>PHP</li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <ul class="fa-ul mb-0 mb-3" style="list-style-type: disc">
+                  <li>Pug.js</li>
+                  <li>React.js</li>
+                  <li>SASS</li>
+                  <li>Vue.js</li>
+                  <li>YARN</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Tools -->
+          <div class="subheading mb-3">Design</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4">
+                <ul class="fa-ul mb-0 mb-3" style="list-style-type: disc">
+                  <li>Adobe Illustrator</li>
+                  <li>Adobe Lightroom</li>
+                  <li>Adobe Photoshop</li>
+                  <li>Adobe XD</li>
+                  <li>Filmora Wondershare</li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <ul class="fa-ul mb-0 mb-3" style="list-style-type: disc">
+                  <li>Figma</li>
+                  <li>MockFlow</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Tools -->
+          <div class="subheading mb-3">Tools</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4">
+                <ul class="fa-ul mb-0 mb-3" style="list-style-type: disc">
+                  <li>AWS</li>
+                  <li>CloudFlare</li>
+                  <li>Backlog</li>
+                  <li>Bootstrap</li>
+                  <li>cPanel</li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <ul class="fa-ul mb-0 mb-3" style="list-style-type: disc">
+                  <li>Chatwork</li>
+                  <li>Freshwork</li>
+                  <li>GIT</li>
+                  <li>Github</li>
+                  <li>GitLab</li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <ul class="fa-ul mb-0 mb-3" style="list-style-type: disc">
+                  <li>Glip</li>
+                  <li>Nginx</li>
+                  <li>Microsoft Office</li>
+                  <li>PHPStorm</li>
+                  <li>Plesk</li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <ul class="fa-ul mb-0 mb-3" style="list-style-type: disc">
+                  <li>Search Engine Optimization</li>
+                  <li>Skype</li>
+                  <li>Slack</li>
+                  <li>Storybook</li>
+                  <li>Tailwind</li>
+                  <li>Visual Studio Code</li>
+                  <li>Wordpress</li>
+                  <li>Zoom</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- OS -->
+          <div class="subheading mb-3">OS</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4">
+                <ul class="fa-ul mb-0 mb-3" style="list-style-type: disc">
+                  <li>Linux</li>
+                  <li>Mac</li>
+                  <li>Windows</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- others -->
+          <div class="subheading mb-3">Others</div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4">
+                <ul class="fa-ul mb-0 mb-3" style="list-style-type: disc">
+                  <li>Hosting</li>
+                  <li>Network</li>
+                  <li>Troubleshooting</li>
+                  <li>Photography</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Personality -->
+          <div class="subheading mb-3">about me</div>
+          <ul class="fa-ul mb-0 mb-3">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Personality
+              <ul style="list-style-type: disc">
+                <li>Communication</li>
+                <li>Creativity</li>
+                <li>Organization</li>
+                <li>Social</li>
+                <li>Team player</li>
+              </ul>
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Communication
+              <ul style="list-style-type: disc">
+                <li>Bisaya</li>
+                <li>English</li>
+                <li>Tagalog</li>
+              </ul>
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Organization
+              <ul style="list-style-type: disc">
                 <li>
-                  Design (Figma, Adobe XD, MockFlow)
+                  GDG Cebu – Google Developers Group Cebu (March 2017 – Present)
                 </li>
                 <li>
-                  Pug.js, Express.js, Node.js, SASS, Tailwind, HTML, CSS, JaveScript, React.js, Storybook
+                  University of Cebu – Association of Working Scholar (AWS)
+                  (April 2015 – October 2019)
+                </li>
+                <li>
+                  University of Cebu – Philippines Scociety of Information
+                  Technology Student (PSITS) (June 2015 – October 2019)
                 </li>
               </ul>
-              projects:
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Agile Development &amp; Scrum
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Browser Testing &amp; Debugging
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Functional Teams
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Responsive Web Design
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="m-0" />
+      <!-- experience -->
+      <section
+        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
+        id="experience"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Experience</h2>
+
+          <!--United Smart Tech -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">United Smart Tech</h3>
+              <div class="subheading mb-3">Web Developer</div>
+              <p>
+                + <b>Manage hosting using AWS lightsail</b>
+                <br />
+                + <b>Manage Domain using GKG and Namecheap</b>
+                <br />
+                + <b>Manage DNS using CloudFlare</b>
+                <br />
+                + <b>Manage forms using Freshworks</b>
+                <br />
+                + <b>Maintaining the website</b>
+                <br />
+                + <b>Fixing bugs on wordpress including plugins</b>
+                <br />
+                + <b>Take responsibility on responsive web and mobile</b>
+                <br />
+                + <b>Testing and improving the design of the website</b>
+                <br />
+                + <b>Identify and troubleshoot UI/UX problems</b>
+              </p>
+              <ul>
+                <li><b>DESIGN:</b> Adobe Photoshop</li>
+                <li><b>CMS:</b> Wordpress</li>
+                <li><b>LANGUAGE:</b> HTML, CSS, PHP</li>
+                <li>
+                  <b>PLUGIN:</b> WPBaker Page Builder, Duplicator, Slider
+                  Revolution, Contact Form 7 and more
+                </li>
+              </ul>
+              <p>projects:</p>
               <ul>
                 <li>
-                  <a href="" target="_blank">gorentals.com</a>
+                  <a href="https://lopezinsurance.com/" target="_blank"
+                    >lopezinsurance.com</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.unitedsmarttech.com/" target="_blank"
+                    >unitedsmarttech.com</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.usmarttech.com/" target="_blank"
+                    >usmarttech.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">March 2022 - Present</span>
+            </div>
+          </div>
+          <!-- endUnited Smart Tech -->
+
+          <!-- DNA Micro Software Inc. -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">DNA Micro Software Inc.</h3>
+              <div class="subheading mb-3">UI/UX Designer</div>
+              <p>
+                + <b>Take responsibility on responsive web and mobile</b>
+                <br />
+                + <b>Testing and improving the design of the website</b>
+                <br />
+                +
+                <b
+                  >Maintaining the appearance of websites by enforcing content
+                  standards</b
+                >
+                <br />
+                + <b>Determine how users interact with products</b>
+                <br />
+                + <b>Identify and troubleshoot UI/UX problems</b>
+              </p>
+              <ul>
+                <li><b> DESIGN: </b> Figma, Adobe XD, MockFlow</li>
+                <li>
+                  <b>LANGUAGE:</b>
+                  Pug.js, Express.js, Node.js, SASS, Tailwind, HTML, CSS,
+                  JaveScript, React.js, Storybook
+                </li>
+              </ul>
+              <p>projects:</p>
+              <ul>
+                <li>
+                  <a href="https://gorentals.com/" target="_blank"
+                    >gorentals.com</a
+                  >
                 </li>
                 <li>
                   <a href="" target="_blank">23point5.com</a>
                 </li>
               </ul>
-            </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2021 - March 2022</span>
+            </div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">July 2021 - March 2022</span>
-          </div>
-        </div>
-        <!-- end DNA Micro Software Inc. -->
+          <!-- end DNA Micro Software Inc. -->
 
-        <!-- Centrality Marketing Solutions -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Centrality Marketing Solutions</h3>
-            <div class="subheading mb-3">Frontend Developer</div>
-            <p>
-              + <b>Create company website from scratch using CMS</b>
-              <br>
-              + <b>Leading the work of a team to achieve all projects</b>
-              <br>
-              + <b>Maintaining company website, company system and client website</b>
-              <br>
-              + <b>Design company website</b>
-              <br>
-              + <b>Manage hosting</b>
-              <br>
-              + <b>Make video presentation for the company </b>
-              <br>
-              + <b>Trouble shoot company technology</b>
-              <br>
-              + <b>Search Engine Optimization (SEO)</b>
-            </p>
+          <!-- Centrality Marketing Solutions -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Centrality Marketing Solutions</h3>
+              <div class="subheading mb-3">Frontend Developer</div>
+              <p>
+                + <b>Create company website from scratch using CMS</b>
+                <br />
+                + <b>Leading the work of a team to achieve all projects</b>
+                <br />
+                +
+                <b
+                  >Maintaining company website, company system and client
+                  website</b
+                >
+                <br />
+                + <b>Design company website</b>
+                <br />
+                + <b>Manage hosting</b>
+                <br />
+                + <b>Make video presentation for the company </b>
+                <br />
+                + <b>Trouble shoot company technology</b>
+                <br />
+                + <b>Search Engine Optimization (SEO)</b>
+              </p>
               <ul>
                 <li>
-                  Wordpress (Brizy, Elementor and more)
+                  <b>CMS:</b>
+                  Wordpress
+                </li>
+                <li><b>PLUGINS:</b> Brizy, Elementor and more</li>
+                <li>
+                  <b> DESIGN: </b>
+                  Adobe Photoshop, Adobe Illustrator
                 </li>
                 <li>
-                  Design (Adobe Photoshop, Adobe Illustrator)
-                </li>
-                <li>
+                  <b>LANGUAGE:</b>
                   Laravel, Vue.js, Github, AWS
                 </li>
               </ul>
-              projects:
+              <p>projects:</p>
               <ul>
                 <li>
-                  <a href="https://www.centralityms.com/" target="_blank">centralityms.com</a>
+                  <a href="https://www.centralityms.com/" target="_blank"
+                    >centralityms.com</a
+                  >
                 </li>
                 <li>
-                  <a href="https://www.blog.centralityms.com/" target="_blank">blog.centralityms.com</a>
+                  <a href="https://www.blog.centralityms.com/" target="_blank"
+                    >blog.centralityms.com</a
+                  >
                 </li>
                 <li>
                   <a href="!" target="_blank">workforce</a>
                 </li>
                 <li>
-                  <a href="https://remaxprocebu.com/" target="_blank">remaxprocebu</a>
+                  <a href="https://remaxprocebu.com/" target="_blank"
+                    >remaxprocebu</a
+                  >
                 </li>
               </ul>
-            </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2021 - July 2021</span>
+            </div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">May 2021 - July 2021</span>
-          </div>
-        </div>
-        <!-- end Centrality Marketing Solutions -->
+          <!-- end Centrality Marketing Solutions -->
 
-        <!-- HiPE Inc. -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">HiPE Japan Inc.</h3>
-            <div class="subheading mb-3">Web Developer</div>
-            <p>
-              + <b>Create new website and maintaining company website</b>
-              <br>
-              + <b>Setup and maintaining the company internet network</b>
-              <br>
-              + <b>Manage hosting</b>
-              <br>
-              + <b>Trouble shoot company laptop</b>
-              <br>
-              + <b>PDF/PSD/XD to HTML</b>
-              <br>
-              + <b>Search Engine Optimization (SEO)</b>
-            </p>
+          <!-- HiPE Inc. -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">HiPE Japan Inc.</h3>
+              <div class="subheading mb-3">Web Developer</div>
+              <p>
+                + <b>Create new website and maintaining company website</b>
+                <br />
+                + <b>Setup and maintaining the company internet network</b>
+                <br />
+                + <b>Manage hosting</b>
+                <br />
+                + <b>Trouble shoot company laptop</b>
+                <br />
+                + <b>PDF/PSD/XD to HTML</b>
+                <br />
+                + <b>Search Engine Optimization (SEO)</b>
+              </p>
               <ul>
                 <li>
-                  Wordpress (ACF, Elementor, Ninja Form, and more)
+                  <b>CMS:</b>
+                  Wordpress
                 </li>
+                <li><b>PLUGINS:</b> (ACF, Elementor, Ninja Form, and more</li>
                 <li>
-                  Design (Adobe Photoshop, Adobe Lightroom, and Adobe Illustrator)
+                  <b>DESIGN:</b> Adobe Photoshop, Adobe Lightroom, and Adobe
+                  Illustrator
                 </li>
-                <li>
-                  CSS, HTML, SASS, Laravel
-                </li>
+                <li><b>LANGUAGE:</b> CSS, HTML, SASS, Laravel</li>
               </ul>
-              projects:
+              <p>projects:</p>
               <ul>
                 <li>
                   <a href="http://hipe.asia" target="_blank">hipe.asia</a>
@@ -460,259 +613,324 @@
               <div class="subheading mb-3">Web Developer</div>
               <p>
                 + <b>Create new website and maintaining company website</b>
-                <br>
+                <br />
                 + <b>PSD to HTML</b>
               </p>
               <ul>
-                <li>
-                  Design (Adobe Photoshop)
-                </li>
-                <li>
-                  Laravel, SASS, CSS, HTML, GIT, Yarn
-                </li>
+                <li><b>DESIGN:</b> Adobe Photoshop</li>
+                <li><b>LANGUAGE: </b>Laravel, SASS, CSS, HTML, GIT, Yarn</li>
               </ul>
-              projects:
+              <p>projects:</p>
               <ul>
                 <li>
-                  <a href="http://drp-estate.com" target="_blank">drp-estate.com</a>
+                  <a href="http://drp-estate.com" target="_blank"
+                    >drp-estate.com</a
+                  >
                 </li>
                 <li>
                   <a href="http://delie.jp" target="_blank">delie.jp</a>
                 </li>
                 <li>
-                  <a href="http://bukkenkingdom.com" target="_blank">bukkenkingdom.com</a>
+                  <a href="http://bukkenkingdom.com" target="_blank"
+                    >bukkenkingdom.com</a
+                  >
                 </li>
                 <li>
-                  <a href="http://seicho-fudousan.com" target="_blank">seicho-fudousan.com</a>
+                  <a href="http://seicho-fudousan.com" target="_blank"
+                    >seicho-fudousan.com</a
+                  >
                 </li>
                 <li>
-                  <a href="http://suidobi-fudousan.com" target="_blank">suidobi-fudousan.com</a>
+                  <a href="http://suidobi-fudousan.com" target="_blank"
+                    >suidobi-fudousan.com</a
+                  >
                 </li>
                 <li>
-                  <a href="http://forest-ie.com" target="_blank">forest-ie.com</a>
+                  <a href="http://forest-ie.com" target="_blank"
+                    >forest-ie.com</a
+                  >
                 </li>
                 <li>
-                  <a href="http://momonoki-est.jp" target="_blank">momonoki-est.jp</a>
+                  <a href="http://momonoki-est.jp" target="_blank"
+                    >momonoki-est.jp</a
+                  >
                 </li>
                 <li>
-                  <a href="http://harmony-fudousan.jp" target="_blank">harmony-fudousan.jp</a>
+                  <a href="http://harmony-fudousan.jp" target="_blank"
+                    >harmony-fudousan.jp</a
+                  >
                 </li>
                 <li>
-                  <a href="http://daiken-rs-estate.jp" target="_blank">daiken-rs-estate.jp</a>
+                  <a href="http://daiken-rs-estate.jp" target="_blank"
+                    >daiken-rs-estate.jp</a
+                  >
                 </li>
                 <li>
                   <a href="http://withbe.jp" target="_blank">withbe.jp</a>
                 </li>
               </ul>
-            </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">November 2019 - May 2021</span>
+            </div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">November 2019 - May 2021</span>
+          <!-- end HiPE Inc. -->
+
+          <!-- THESIS -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Devcash</h3>
+              <div class="subheading mb-3">THESIS</div>
+              <p>
+                <b
+                  >A SOFTWARE-AS-A-SERVICE FOR CASHIERING SYSTEM FOR MICRO AND
+                  SMALL ENTERPRISES</b
+                ><br />
+                <b>POSITION:</b> Hipster<br />
+                <b>LANGUAGE:</b> Angular.js, PHP, Bootstrap, CSS, HTML, Android,
+                Firebase
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2019 - October 2019</span>
+            </div>
           </div>
+          <!-- end THESIS -->
+
+          <!-- KREDO IT ABROD INC. -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">KREDO IT ABROD INC.</h3>
+              <div class="subheading mb-3">ON-THE JOB TRAINIG</div>
+              <p>
+                + <b>Technical Support for hardware and software</b> <br />
+                + <b>Created Inventory System for the company</b>
+              </p>
+              <ul>
+                <li><b>LANGUAGE:</b> SQL, CSS, HTML, and GIT</li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">October 2018 - May 2019</span>
+            </div>
+          </div>
+          <!-- end KREDO IT ABROD INC. -->
+
+          <!-- WORKING SCHOLAR -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">University of Cebu - Main Campus</h3>
+              <div class="subheading mb-3">WORKING SCHOLAR</div>
+              <p>
+                + <b>Technical Support for hardware and software</b> <br />
+                + <b>Assisting students and teachers on computer laboratory</b>
+                <br />
+                + <b>Sorting and filing documents</b>
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2015 - October 2019</span>
+            </div>
+          </div>
+          <!-- end WORKING SCHOLAR -->
         </div>
-        <!-- end HiPE Inc. -->
+      </section>
 
-        <!-- THESIS -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Devcash</h3>
-            <div class="subheading mb-3">THESIS</div>
-            <p>
-              <b>A SOFTWARE-AS-A-SERVICE FOR CASHIERING SYSTEM FOR MICRO AND SMALL ENTERPRISES</b><br>
-              Position: Hipster<br>
-              Language: Angular.js, PHP, Bootstrap, CSS, HTML, Android, and Firebase
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2019 - October 2019</span>
-          </div>
-        </div>
-        <!-- end THESIS -->
+      <hr class="m-0" />
+      <!-- school -->
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="education"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Education</h2>
 
-        <!-- KREDO IT ABROD INC. -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">KREDO IT ABROD INC.</h3>
-            <div class="subheading mb-3">ON-THE JOB TRAINIG</div>
-            <p>
-              + <b>Technical Support for hardware and software</b> <br>
-              + <b>Created Inventory System for the company</b>
-            </p>
-            <ul>
-              <li>
-                Laravel, SQL, CSS, HTML, and GIT
-              </li>
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2018 - May 2019</span>
-          </div>
-        </div>
-        <!-- end KREDO IT ABROD INC. -->
-
-        <!-- WORKING SCHOLAR -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Cebu - Main Campus</h3>
-            <div class="subheading mb-3">WORKING SCHOLAR</div>
-            <p>
-              + <b>Technical Support for hardware and software</b> <br>
-              + <b>Assisting students and teachers on computer laboratory</b> <br>
-              + <b>Sorting and filing documents</b>
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">May 2015 - October 2019</span>
-          </div>
-        </div>
-        <!-- end WORKING SCHOLAR -->
-      </div>
-    </section>
-
-    <hr class="m-0">
-<!-- school -->
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="mb-5">Education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Cebu - Main Campus</h3>
-            <div class="subheading mb-3">Bachelor of Science in Information Technology</div>
-            <!-- <div>Computer Science - Web Development Track</div>
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">University of Cebu - Main Campus</h3>
+              <div class="subheading mb-3">
+                Bachelor of Science in Information Technology
+              </div>
+              <!-- <div>Computer Science - Web Development Track</div>
             <p>GPA: 2.23</p> -->
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2015 - October 2019</span>
+            </div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2015 - October 2019</span>
-          </div>
-        </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Immaculate Heart of Mary Academy - Minglanilla</h3>
-            <div class="subheading mb-3">High School</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2011 - March 2015</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-<!-- awards -->
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Certifications</h2>
-        <div style="display: none;" id="Digital_Garage">
-          <img src="img/Google_Digital_Garage_Certificate.jpg" width="80%"/>
-        </div>
-        <div style="display: none;" id="system_network">
-          <img src="img/TESDA_Maintain Computer Systems and Networks_Certificate of Completion.jpg" width="80%"/>
-        </div>
-        <div style="display: none;" id="Technopreneurship">
-          <img src="img/TESDA_SMARTtechno101_Certificate of Completion.jpg" width="80%"/>
-        </div>
-        <div style="display: none;" id="Certificate-MOOC-2018">
-          <img src="img/Certificate-MOOC 2018.jpg" width="80%"/>
-        </div>
-        <div style="display: none;" id="5th_UC_ICT_201">
-          <img src="img/5th UC_ICT_2017.jpg" width="80%"/>
-        </div>
-        <div style="display: none;" id="4th_UC_ICT_Congress_2016">
-          <img src="img/4th UC_ICT Congress_2016.jpg" width="80%"/>
-        </div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Digital_Garage" href="javascript:;">
-              The Fundamentals of Digital Marketing | Google (2021)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#system_network" href="javascript:;">
-            Maintain Computer Systems and Networks | TESDA (2021)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Technopreneurship" href="javascript:;">
-              SMART Technopreneurship 101 | TESDA (2021)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Certificate-MOOC-2018" href="javascript:;">
-              Building Entrepreneurial Ecosystem to Enhance Higher Education Value-Added for Better Graduate Employability | (BEEHIVE) - MOOC (2018)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#5th_UC_ICT_201" href="javascript:;">
-              5th UC-ICT Congress “Sharpening Junior Mobile Technologists” | University of Cebu (2017)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#4th_UC_ICT_Congress_2016" href="javascript:;">
-              4th UC-ICT Congress “Shaping up Creative Minds through Great UX Design” | University of Cebu (2016)
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="Reference">
-      <div class="w-100">
-        <h2 class="mb-5">Reference</h2>
-        
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Ms. Ma. Cathering Carumba</h3>
-            <span class="text-primary">Secretary – College of Computer Studies – UC – Main</span>
-            <div class="subheading mb-3">Contact: 255 – 7777 loc. 113</div>
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">
+                Immaculate Heart of Mary Academy - Minglanilla
+              </h3>
+              <div class="subheading mb-3">High School</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2011 - March 2015</span>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Ms. Jelaica Gilbuela Santillan</h3>
-            <span class="text-primary">Admin – HiPE Japan Inc.</span>
-            <div class="subheading mb-3">Contact: 0995 – 399 – 1214</div>
+      <hr class="m-0" />
+      <!-- awards -->
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="awards"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Certifications</h2>
+          <div style="display: none" id="Digital_Garage">
+            <img src="img/Google_Digital_Garage_Certificate.jpg" width="80%" />
+          </div>
+          <div style="display: none" id="system_network">
+            <img
+              src="img/TESDA_Maintain Computer Systems and Networks_Certificate of Completion.jpg"
+              width="80%"
+            />
+          </div>
+          <div style="display: none" id="Technopreneurship">
+            <img
+              src="img/TESDA_SMARTtechno101_Certificate of Completion.jpg"
+              width="80%"
+            />
+          </div>
+          <div style="display: none" id="Certificate-MOOC-2018">
+            <img src="img/Certificate-MOOC 2018.jpg" width="80%" />
+          </div>
+          <div style="display: none" id="5th_UC_ICT_201">
+            <img src="img/5th UC_ICT_2017.jpg" width="80%" />
+          </div>
+          <div style="display: none" id="4th_UC_ICT_Congress_2016">
+            <img src="img/4th UC_ICT Congress_2016.jpg" width="80%" />
+          </div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a data-fancybox data-src="#Digital_Garage" href="javascript:;">
+                The Fundamentals of Digital Marketing | Google (2021)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a data-fancybox data-src="#system_network" href="javascript:;">
+                Maintain Computer Systems and Networks | TESDA (2021)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Technopreneurship"
+                href="javascript:;"
+              >
+                SMART Technopreneurship 101 | TESDA (2021)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Certificate-MOOC-2018"
+                href="javascript:;"
+              >
+                Building Entrepreneurial Ecosystem to Enhance Higher Education
+                Value-Added for Better Graduate Employability | (BEEHIVE) - MOOC
+                (2018)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a data-fancybox data-src="#5th_UC_ICT_201" href="javascript:;">
+                5th UC-ICT Congress “Sharpening Junior Mobile Technologists” |
+                University of Cebu (2017)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#4th_UC_ICT_Congress_2016"
+                href="javascript:;"
+              >
+                4th UC-ICT Congress “Shaping up Creative Minds through Great UX
+                Design” | University of Cebu (2016)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="m-0" />
+
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="Reference"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Reference</h2>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Ms. Ma. Cathering Carumba</h3>
+              <span class="text-primary"
+                >Secretary – College of Computer Studies – UC – Main</span
+              >
+              <div class="subheading mb-3">Contact: 255 – 7777 loc. 113</div>
+            </div>
+          </div>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Ms. Jelaica Gilbuela Santillan</h3>
+              <span class="text-primary">Admin – HiPE Japan Inc.</span>
+              <div class="subheading mb-3">Contact: 0995 – 399 – 1214</div>
+            </div>
+          </div>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Mr. Kevin Rey Co</h3>
+              <span class="text-primary"
+                >Operation Manager – Fat House Distributors LLC</span
+              >
+              <div class="subheading mb-3">Contact: 0995 – 930 – 1450</div>
+            </div>
           </div>
         </div>
+      </section>
+    </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Mr. Kevin Rey Co</h3>
-            <span class="text-primary">Operation Manager – Fat House Distributors LLC</span>
-            <div class="subheading mb-3">Contact: 0995 – 930 – 1450</div>
-          </div>
-        </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-      </div>
-    </section>
-  </div>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
-  <!-- popup image -->
-  <!-- <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script> -->
-  <script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/jquery.fancybox.js"></script>
-
-</body>
-
+    <!-- popup image -->
+    <!-- <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+  </body>
 </html>

@@ -98,3 +98,45 @@
 ul {
   list-style: none;
 }
+
+.hide {
+  display: none;
+}
+
+/* filter */
+.filter-title {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-button {
+  transition: all 0.2s ease-in-out;
+  -webkit-appearance: none;
+  border-radius: 100px;
+  font-family: inherit;
+  appearance: none;
+  background: none;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 20px;
+  outline: none;
+  opacity: 0.4;
+  border: none;
+  color: #bd5d38;
+}
+
+.filter-button:hover,
+.filter-button.active {
+  opacity: 1;
+}
+
+.filter-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-container .item img {
+  max-width: 300px;
+}

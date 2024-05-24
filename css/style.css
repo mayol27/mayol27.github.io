@@ -100,7 +100,7 @@ ul {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 /* filter */
@@ -110,18 +110,15 @@ ul {
 }
 
 .filter-button {
-  transition: all 0.2s ease-in-out;
-  -webkit-appearance: none;
-  border-radius: 100px;
   font-family: inherit;
   appearance: none;
   background: none;
   font-weight: 700;
   font-size: 18px;
   cursor: pointer;
-  padding: 20px;
-  outline: none;
+  padding: 5px 20px;
   opacity: 0.4;
+  outline: none !important;
   border: none;
   color: #bd5d38;
 }
@@ -131,12 +128,22 @@ ul {
   opacity: 1;
 }
 
+.filter-button.active {
+  border-bottom: solid 2px #bd5d38;
+}
+
 .filter-container {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
 
+.filter-container .item {
+  display: flex;
+  align-items: center;
+}
+
 .filter-container .item img {
   max-width: 300px;
+  max-height: 200px;
 }

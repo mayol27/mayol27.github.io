@@ -1,1042 +1,1426 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <title>John Lloyd Segismar Mayol</title>
 
-  <title>John Lloyd Segismar Mayol</title>
+    <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font_saira.css" />
+    <link rel="stylesheet" href="css/font_muli.css" />
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <!-- image popup -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
-  <link rel="stylesheet" href="css/font_saira.css" />
-  <link rel="stylesheet" href="css/font_muli.css" />
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
-  <!-- image popup -->
-  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/resume.css" rel="stylesheet" />
+  </head>
 
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet" />
-</head>
+  <body id="page-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      id="sideNav"
+    >
+      <a class="navbar-brand js-scroll-trigger" href="#">
+        <span class="d-block d-lg-none">John Lloyd Segismar Mayol</span>
+        <span class="d-none d-lg-block">
+          <img
+            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            id="myImg"
+            src="img/pic03.jpg"
+            alt="John Lloyd Segismar Mayol - BSIT"
+          />
+        </span>
+      </a>
 
-<body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#">
-      <span class="d-block d-lg-none">John Lloyd Segismar Mayol</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" id="myImg" src="img/pic03.jpg"
-          alt="John Lloyd Segismar Mayol - BSIT" />
-      </span>
-    </a>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <span class="close">×</span>
-      <img class="modal-content" id="img01" />
-      <div id="caption"></div>
-    </div>
-
-    <script>
-      // Get the modal
-      var modal = document.getElementById("myModal");
-
-      // Get the image and insert it inside the modal - use its "alt" text as a caption
-      var img = document.getElementById("myImg");
-      var modalImg = document.getElementById("img01");
-      var captionText = document.getElementById("caption");
-      img.onclick = function () {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-      };
-
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal.style.display = "none";
-      };
-    </script>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Technical Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#project">Project</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Professional Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Certificates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#Reference">Reference</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-    <!-- about me -->
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div style="position: absolute; top: 0">
-        <a href="storage.html" style="color: white; cursor: default">sada</a>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
       </div>
-      <div class="w-100">
-        <h1 class="mb-0">
-          John Lloyd Segismar
-          <span class="text-primary">Mayol</span>
-        </h1>
-        <div class="subheading mb-5">
-          Bachelor of Science in Information Technology
-          <br />
-          PHILIPPINES · <a href="tel:+639432219155">+63 943 221 9155</a> ·
-          <a href="mailto:johnlloydmayol@gmail.com">johnlloydmayol@gmail.com</a>
-        </div>
-        <p class="lead mb-5">
-          Frontend Developer with 7+ years of experience in React, Next.js, and API integration. Skilled in building
-          scalable, responsive apps, consuming REST/GraphQL APIs, and leading Agile teams to deliver high-performance
-          solutions.
-        </p>
-        <div class="social-icons mb-3">
-          <a href="https://github.com/mayol27" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/john-lloyd-mayol" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-        <div>
-          <a href="resume_johnlloydmayol.zip">
-            <button type="button" class="btn" style="background-color: rgb(221, 98, 27); color: white">
-              <i class="fa fa-download"></i>&nbsp; Resume
-            </button></a>
-        </div>
-      </div>
-    </section>
 
-    <hr class="m-0" />
-    <!-- technical skill -->
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Technical Skills</h2>
-        <!-- Frontend -->
-        <div class="subheading mb-3">Frontend</div>
-        <div class="container-fluid">
-          <p>HTML, CSS (SASS, Tailwind, Bootstrap), JavaScript (React.JS, Next.JS), Redux, Storybook</p>
-        </div>
-        <!-- Version Control & Deployment -->
-        <div class="subheading mb-3">Version Control & Deployment</div>
-        <div class="container-fluid">
-          <p>AWS, Azure DevOps, CI/CD Pipelines, Git, GitHub, GitLab, Microsoft Azure</p>
-        </div>
-        <!-- CMS -->
-        <div class="subheading mb-3">CMS</div>
-        <div class="container-fluid">
-          <p>Adobe AEM, WordPress</p>
-        </div>
-        <!-- UI/UX Design Tools -->
-        <div class="subheading mb-3">UI/UX Design Tools</div>
-        <div class="container-fluid">
-          <p>Adobe Illustrator, Adobe Photoshop, Adobe XD, Figma, MockFlow </p>
-        </div>
-        <!-- Others -->
-        <div class="subheading mb-3">Others</div>
-        <div class="container-fluid">
-          <p>cPanel, Cloudflare, JIRA, MySQL, Microsoft Office, Node.js, NPM, Postman, PHP (Laravel), Swagger, REST API,
-            GraphQL, VS Code, Yarn </p>
-        </div>
-        <!-- Operating Systems -->
-        <div class="subheading mb-3">Operating Systems</div>
-        <div class="container-fluid">
-          <p>macOS, Windows</p>
-        </div>
-        <!-- Personality -->
-        <div class="subheading mb-3">about me</div>
-        <ul class="fa-ul mb-0 mb-3">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Personality
-            <ul style="list-style-type: disc">
-              <li>Communication</li>
-              <li>Creativity</li>
-              <li>Organization</li>
-              <li>Social</li>
-              <li>Team player</li>
-            </ul>
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Organization
-            <ul style="list-style-type: disc">
-              <li>
-                GDG Cebu – Google Developers Group Cebu (March 2017 – Present)
-              </li>
-              <li>
-                University of Cebu – Association of Working Scholar (AWS)
-                (April 2015 – October 2019)
-              </li>
-              <li>
-                University of Cebu – Philippines Scociety of Information
-                Technology Student (PSITS) (June 2015 – October 2019)
-              </li>
-            </ul>
-          </li>
-        </ul>
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
 
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        };
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+          modal.style.display = "none";
+        };
+      </script>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
           </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Browser Testing &amp; Debugging
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills"
+              >Technical Skills</a
+            >
           </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#project">Project</a>
           </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Responsive Web Design
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience"
+              >Professional Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education"
+              >Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards"
+              >Certificates</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Reference"
+              >Reference</a
+            >
           </li>
         </ul>
       </div>
-    </section>
+    </nav>
 
-    <hr class="m-0" />
-    <!-- Project -->
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="project">
-      <div class="w-100">
-        <h2 class="mb-5">Project</h2>
-        <div class="filter">
-          <div class="filter-title mb-5">
-            <button class="filter-button all active">All</button>
-            <button class="filter-button filter-website">Website</button>
-            <button class="filter-button filter-design">Design</button>
-            <button class="filter-button filter-logo">Logo</button>
+    <div class="container-fluid p-0">
+      <!-- about me -->
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="about"
+      >
+        <div style="position: absolute; top: 0">
+          <a href="storage.html" style="color: white; cursor: default">sada</a>
+        </div>
+        <div class="w-100">
+          <h1 class="mb-0">
+            John Lloyd Segismar
+            <span class="text-primary">Mayol</span>
+          </h1>
+          <div class="subheading mb-5">
+            Bachelor of Science in Information Technology
+            <br />
+            PHILIPPINES · <a href="tel:+639432219155">+63 943 221 9155</a> ·
+            <a href="mailto:johnlloydmayol@gmail.com"
+              >johnlloydmayol@gmail.com</a
+            >
           </div>
-          <!-- modal -->
-          <div style="display: none">
-            <div style="display: none" id="website_01">
-              <img src="img/filter/website_01.jpg" width="100%" />
-            </div>
-            <div style="display: none" id="website_02">
-              <img src="img/filter/website_02.jpg" width="100%" />
-            </div>
-            <div style="display: none" id="website_03">
-              <img src="img/filter/website_03.jpg" width="100%" />
-            </div>
-            <div style="display: none" id="website_04">
-              <img src="img/filter/website_04.jpg" width="100%" />
-            </div>
-            <div style="display: none" id="website_05">
-              <img src="img/filter/website_05.jpg" width="100%" />
-            </div>
-            <div style="display: none" id="website_06">
-              <img src="img/filter/website_06.jpg" width="100%" />
-            </div>
-            <div style="display: none" id="website_07">
-              <img src="img/filter/website_07.jpg" width="100%" />
-            </div>
-            <div style="display: none" id="website_08">
-              <img src="img/filter/website_08.jpg" width="100%" />
-            </div>
-            <div style="display: none" id="design_01">
-              <img src="img/filter/design_01.jpg" width="100%" />
-            </div>
-            <div style="display: none" id="logo_01">
-              <img src="img/filter/logo_01.png" width="100%" />
-            </div>
-            <div style="display: none" id="logo_02">
-              <img src="img/filter/logo_02.png" width="100%" />
-            </div>
-            <div style="display: none" id="logo_03">
-              <img src="img/filter/logo_03.png" width="100%" />
-            </div>
-            <div style="display: none" id="logo_04">
-              <img src="img/filter/logo_04.png" width="100%" />
-            </div>
-            <div style="display: none" id="logo_05">
-              <img src="img/filter/logo_05.png" width="100%" />
-            </div>
+          <p class="lead mb-5">
+            Frontend Developer with 7+ years of experience in React, Next.js,
+            and API integration. Skilled in building scalable, responsive apps,
+            consuming REST/GraphQL APIs, and leading Agile teams to deliver
+            high-performance solutions.
+          </p>
+          <div class="social-icons mb-3">
+            <a href="https://github.com/mayol27" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/john-lloyd-mayol"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
-          <!-- modal end -->
-          <div class="filter-container">
-            <div class="item filter-website">
-              <a data-fancybox data-src="#website_01" href="javascript:;">
-                <img src="img/filter/website_01.jpg" alt="website"></img>
-              </a>
-            </div>
-            <div class="item filter-design">
-              <a data-fancybox data-src="#design_01" href="javascript:;">
-                <img src="img/filter/design_01.jpg" alt="design"></img>
-              </a>
-            </div>
-            <div class="item filter-logo">
-              <a data-fancybox data-src="#logo_01" href="javascript:;">
-                <img src="img/filter/logo_01.png" alt="logo"></img>
-              </a>
-            </div>
-            <div class="item filter-website">
-              <a data-fancybox data-src="#website_02" href="javascript:;">
-                <img src="img/filter/website_02.jpg" alt="website"></img>
-              </a>
-            </div>
-            <div class="item filter-logo">
-              <a data-fancybox data-src="#logo_02" href="javascript:;">
-                <img src="img/filter/logo_02.png" alt="logo"></img>
-              </a>
-            </div>
-            <div class="item filter-website filter-design">
-              <a data-fancybox data-src="#website_03" href="javascript:;">
-                <img src="img/filter/website_03.jpg" alt="website"></img>
-              </a>
-            </div>
-            <div class="item filter-logo">
-              <a data-fancybox data-src="#logo_03" href="javascript:;">
-                <img src="img/filter/logo_03.png" alt="logo"></img>
-              </a>
-            </div>
-            <div class="item filter-website filter-design">
-              <a data-fancybox data-src="#website_04" href="javascript:;">
-                <img src="img/filter/website_04.jpg" alt="website"></img>
-              </a>
-            </div>
-            <div class="item filter-website">
-              <a data-fancybox data-src="#website_05" href="javascript:;">
-                <img src="img/filter/website_05.jpg" alt="website"></img>
-              </a>
-            </div>
-            <div class="item filter-website">
-              <a data-fancybox data-src="#website_06" href="javascript:;">
-                <img src="img/filter/website_06.jpg" alt="website"></img>
-              </a>
-            </div>
-            <div class="item filter-logo">
-              <a data-fancybox data-src="#logo_04" href="javascript:;">
-                <img src="img/filter/logo_04.png" alt="logo"></img>
-              </a>
-            </div>
-            <div class="item filter-website filter-design">
-              <a data-fancybox data-src="#website_07" href="javascript:;">
-                <img src="img/filter/website_07.jpg" alt="website"></img>
-              </a>
-            </div>
-            <div class="item filter-website">
-              <a data-fancybox data-src="#website_08" href="javascript:;">
-                <img src="img/filter/website_08.jpg" alt="website"></img>
-              </a>
-            </div>
-            <div class="item filter-logo">
-              <a data-fancybox data-src="#logo_05" href="javascript:;">
-                <img src="img/filter/logo_05.png" alt="logo"></img>
-              </a>
-            </div>
+          <div>
+            <a href="resume_johnlloydmayol.zip">
+              <button
+                type="button"
+                class="btn"
+                style="background-color: rgb(221, 98, 27); color: white"
+              >
+                <i class="fa fa-download"></i>&nbsp; Resume
+              </button></a
+            >
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <hr class="m-0" />
-    <!-- Professional experience -->
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5">Professional Experience</h2>
-
-        <!-- Accenture Inc. -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Accenture Inc.</h3>
-            <div class="subheading mb-3">Multiplatform Frontend Developer Sr Analyst</div>
+      <hr class="m-0" />
+      <!-- technical skill -->
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="skills"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Technical Skills</h2>
+          <!-- Frontend -->
+          <div class="subheading mb-3">Frontend</div>
+          <div class="container-fluid">
             <p>
-              + <b>Built new components and pages using React JS, Next JS, Redux, and Storybook to enhance UI/UX
-                consistency and reusability.</b>
-              <br />
-              + <b>Transformed designs (PSD/XD/Figma) into responsive code.</b>
-              <br />
-              + <b>Created and maintained Storybook components for scalable UI development.</b>
-              <br />
-              + <b>Integrated and consumed RESTful and GraphQL APIs to enable dynamic data-driven applications.</b>
-              <br />
-              + <b>Designed reusable API services and handled authentication, error handling, and performance
-                optimization.</b>
-              <br />
-              + <b>Configured builds, tested applications, and optimized technology architecture.</b>
-              <br />
-              + <b>Ensured all custom components API integrations met performance goals and business requirements.</b>
-              <br />
-              + <b>Led the team to complete backlog tickets efficiently.</b>
-              <br />
-              + <b>Led the team through Agile sprints and served as Scrum Master on a GenAI project.</b>
-              <br />
-              + <b>Reviewed pull requests (PRs) before merging with the development branch.</b>
-              <br />
-              + <b>Managed CI/CD pipelines on servers to streamline deployment processes.</b>
-              <br />
-              + <b>Collaborated with developers, designers, and architects to meet project goals.</b>
-              <br />
-              + <b>Communicated issues and dependencies with the technology architect and project manager.</b>
-              <br />
-              + <b>Planned project structures and development workflows before implementation.</b>
-              <br />
-              + <b>Attended company training sessions to stay updated on new technologies and best practices.</b>
-              <br />
-
-            </p>
-            <ul>
-              <li><b>CMS: </b>Adobe AEM</li>
-              <li><b>DESIGN: </b>Adobe XD, Figma</li>
-              <li>
-                <b>LANGUAGE:</b>
-                HTML, CSS (SASS, Tailwind, Bootstrap), JavaScript (React JS, Next JS), Redux, Storybook, REST API,
-                GraphQL
-              </li>
-              <li>
-                <b>TOOL:</b>
-                AWS, JIRA, Microsoft Azure, MS Teams, Git, Postman, Swagger
-              </li>
-            </ul>
-            <p>projects:</p>
-            <ul>
-              <li>
-                <a href="#">Gen AI in TDLC - Training Labs</a>
-              </li>
-              <li>
-              </li>
-              <li> <a href="#">IX DMO - Fincantieri</a>
-              </li>
-              <li> <a href="#">ZATCA Digital Transformation</a>
-              </li>
-              <li> <a href="#">MS-LH-Sitecore AVA-KDDI-Chubu Telecoms</a>
-              </li>
-              <li><a href="#">MS IPS - LH - AVA - BDR - Sitecore Capacity - BDR THERMEA</a>
-              </li>
-
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2022 - Present</span>
-          </div>
-        </div>
-        <!-- end Accenture Inc. -->
-
-        <!-- DNA Micro Software Inc. -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">DNA Micro Software Inc.</h3>
-            <div class="subheading mb-3">UI/UX Designer and Developer</div>
-            <p>
-              + <b>Take responsibility on responsive web, tablet and mobile views</b>
-              <br />
-              + <b>Testing and improving the design of the project</b>
-              <br />
-              + <b>Maintaining the appearance of project by enforcing content standards</b>
-              <br />
-              + <b>Determine how users interact with products</b>
-              <br />
-              + <b>Integrated and consumed RESTful and GraphQL APIs to enable dynamic data-driven applications.</b>
-              <br />
-              + <b>Designed reusable API services and handled authentication, error handling, and performance
-                optimization.</b>
-              <br />
-              + <b>Identify and troubleshoot UI/UX problems</b>
-              <br />
-              + <b>Transformed designs (PSD/XD/Figma) into responsive code.</b>
-              <br />
-              + <b>Create new components</b>
-              <br />
-              + <b>Manage the Search Engine Optimization (SEO)</b>
-              <br />
-              + <b>Optimized site performance, reducing load time by 40%</b>
-              <br />
-              + <b>Led a 10 - member team to deliver the UI/UX GoRentals, improving user engagement by 30%</b>
-            </p>
-            <ul>
-              <li><b>DESIGN: </b>Adobe XD, Figma, MockFlow</li>
-              <li>
-                <b>LANGUAGE:</b>
-                HTML, CSS (SASS, Tailwind), JS (React.JS, Next.JS, Express.JS, Pug.JS), Storybook, Git, GitHub, GitLab
-              </li>
-            </ul>
-            <p>projects:</p>
-            <ul>
-              <li>
-                <a href="https://gorentals.com/" target="_blank">gorentals.com</a>
-              </li>
-              <li>
-                <a href="https://www.23point5.com/" target="_blank">23point5.com</a>
-              </li>
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">July 2021 - October 2022</span>
-          </div>
-        </div>
-        <!-- end DNA Micro Software Inc. -->
-
-        <!-- Centrality Marketing Solutions -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Centrality Marketing Solutions</h3>
-            <div class="subheading mb-3">Frontend Developer</div>
-            <p>
-              + <b>Create company website from scratch using CMS</b>
-              <br />
-              + <b>Leading the work of a team to achieve all projects</b>
-              <br />
-              +
-              <b>Maintaining company website, company system and client
-                website</b>
-              <br />
-              + <b>Design company website</b>
-              <br />
-              + <b>Transformed designs (PSD/XD/Figma) into responsive code.</b>
-              <br />
-              + <b>Manage hosting</b>
-              <br />
-              + <b>Make video presentation for the company </b>
-              <br />
-              + <b>Trouble shoot company technology</b>
-              <br />
-              + <b>Manage the Search Engine Optimization (SEO)</b>
-              <br />
-              + <b>Identify and troubleshoot UI/UX problems</b>
-            </p>
-            <ul>
-              <li>
-                <b>CMS:</b>
-                Wordpress
-              </li>
-              <li><b>PLUGINS:</b> Brizy, Elementor and more</li>
-              <li>
-                <b> DESIGN: </b>
-                Adobe Photoshop, Adobe Illustrator
-              </li>
-              <li>
-                <b>LANGUAGE:</b>
-                HTML, CSS, JS (Vue.JS), PHP (Laravel), Git, GitHub, AWS
-              </li>
-            </ul>
-            <p>projects:</p>
-            <ul>
-              <li>
-                <a href="https://www.centralityms.com/" target="_blank">centralityms.com</a>
-              </li>
-              <li>
-                <a href="https://www.blog.centralityms.com/" target="_blank">blog.centralityms.com</a>
-              </li>
-              <li>
-                <a href="!" target="_blank">workforce</a>
-              </li>
-              <li>
-                <a href="https://remaxprocebu.com/" target="_blank">remaxprocebu</a>
-              </li>
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">May 2021 - July 2021</span>
-          </div>
-        </div>
-        <!-- end Centrality Marketing Solutions -->
-
-        <!-- HiPE Inc. -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">HiPE Japan Inc.</h3>
-            <div class="subheading mb-3">Web Developer</div>
-            <p>
-              +
-              <b>Create new website and maintaining company website and client
-                website</b>
-              <br />
-              + <b>Setup and maintaining the company internet network</b>
-              <br />
-              + <b>Manage hosting</b>
-              <br />
-              + <b>Trouble shoot company laptop</b>
-              <br />
-              + <b>Transformed designs (PSD/XD/Figma) into responsive code.</b>
-              <br />
-              + <b>Manage the Search Engine Optimization (SEO)</b>
-              <br />
-              + <b>Optimized site performance, reducing load time by 50%</b>
-            </p>
-            <ul>
-              <li>
-                <b>CMS:</b>
-                Wordpress
-              </li>
-              <li><b>PLUGINS:</b> ACF, Elementor, Ninja Form, and more</li>
-              <li>
-                <b>DESIGN:</b> Adobe Photoshop, Adobe Lightroom, and Adobe
-                Illustrator
-              </li>
-              <li><b>LANGUAGE: </b>HTML, CSS (SASS, Bootstrap, Tailwind), PHP (Laravel), GIT, GitLab, GitHub, Yarn</li>
-            </ul>
-            <p>projects:</p>
-            <ul>
-              <li>
-                <a href="http://hipe.asia" target="_blank">hipe.asia</a>
-              </li>
-              <li>
-                <a href="http://en.hipe.asia" target="_blank">en.hipe.asia</a>
-              </li>
-              <li>
-                <a href="http://drp-estate.com" target="_blank">drp-estate.com</a>
-              </li>
-              <li>
-                <a href="http://delie.jp" target="_blank">delie.jp</a>
-              </li>
-              <li>
-                <a href="http://bukkenkingdom.com" target="_blank">bukkenkingdom.com</a>
-              </li>
-              <li>
-                <a href="http://seicho-fudousan.com" target="_blank">seicho-fudousan.com</a>
-              </li>
-              <li>
-                <a href="http://suidobi-fudousan.com" target="_blank">suidobi-fudousan.com</a>
-              </li>
-              <li>
-                <a href="http://forest-ie.com" target="_blank">forest-ie.com</a>
-              </li>
-              <li>
-                <a href="http://momonoki-est.jp" target="_blank">momonoki-est.jp</a>
-              </li>
-              <li>
-                <a href="http://harmony-fudousan.jp" target="_blank">harmony-fudousan.jp</a>
-              </li>
-              <li>
-                <a href="http://daiken-rs-estate.jp" target="_blank">daiken-rs-estate.jp</a>
-              </li>
-              <li>
-                <a href="http://withbe.jp" target="_blank">withbe.jp</a>
-              </li>
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">November 2019 - May 2021</span>
-          </div>
-        </div>
-        <!-- end HiPE Inc. -->
-
-        <!-- KREDO IT ABROD INC. -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">KREDO IT ABROD INC.</h3>
-            <div class="subheading mb-3">ON-THE JOB TRAINIG</div>
-            <p>
-              + <b>Technical Support for hardware and software</b> <br />
-              + <b>Created Inventory System for the company</b>
-            </p>
-            <ul>
-              <li><b>LANGUAGE:</b> HTML, CSS (Bootstrap), PHP (Laravel), SQL, GIT, GitHub</li>
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2018 - May 2019</span>
-          </div>
-        </div>
-        <!-- end KREDO IT ABROD INC. -->
-
-        <!-- WORKING SCHOLAR -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Cebu - Main Campus</h3>
-            <div class="subheading mb-3">WORKING SCHOLAR</div>
-            <p>
-              + <b>Technical Support for hardware and software</b> <br />
-              + <b>Assisting students and teachers on computer laboratory</b>
-              <br />
-              + <b>Sorting and filing documents</b>
+              HTML, CSS (SASS, Tailwind, Bootstrap), JavaScript (React.JS,
+              Next.JS), Redux, Storybook
             </p>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">May 2015 - October 2019</span>
+          <!-- Cloud, Version Control & Deployment -->
+          <div class="subheading mb-3">Cloud, Version Control & Deployment</div>
+          <div class="container-fluid">
+            <p>
+              AWS, Azure DevOps, CI/CD Pipelines, Git, GitHub, GitLab, Microsoft
+              Azure
+            </p>
+          </div>
+          <!-- CMS -->
+          <div class="subheading mb-3">CMS</div>
+          <div class="container-fluid">
+            <p>Adobe AEM, WordPress</p>
+          </div>
+          <!-- UI/UX Design Tools -->
+          <div class="subheading mb-3">UI/UX Design Tools</div>
+          <div class="container-fluid">
+            <p>Adobe Illustrator, Adobe Photoshop, Adobe XD, Figma, MockFlow</p>
+          </div>
+          <!-- Others -->
+          <div class="subheading mb-3">Others</div>
+          <div class="container-fluid">
+            <p>
+              cPanel, Cloudflare, JIRA, MySQL, Microsoft Office, Node.js, NPM,
+              Postman, PHP (Laravel), Swagger, REST API, GraphQL, VS Code, Yarn
+            </p>
+          </div>
+          <!-- Operating Systems -->
+          <div class="subheading mb-3">Operating Systems</div>
+          <div class="container-fluid">
+            <p>macOS, Windows</p>
+          </div>
+          <!-- Personality -->
+          <div class="subheading mb-3">about me</div>
+          <ul class="fa-ul mb-0 mb-3">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Personality
+              <ul style="list-style-type: disc">
+                <li>Communication</li>
+                <li>Creativity</li>
+                <li>Organization</li>
+                <li>Social</li>
+                <li>Team player</li>
+              </ul>
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Organization
+              <ul style="list-style-type: disc">
+                <li>
+                  GDG Cebu – Google Developers Group Cebu (March 2017 – Present)
+                </li>
+                <li>
+                  University of Cebu – Association of Working Scholar (AWS)
+                  (April 2015 – October 2019)
+                </li>
+                <li>
+                  University of Cebu – Philippines Scociety of Information
+                  Technology Student (PSITS) (June 2015 – October 2019)
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Agile Development &amp; Scrum
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Browser Testing &amp; Debugging
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Functional Teams
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Responsive Web Design
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="m-0" />
+      <!-- Project -->
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="project"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Project</h2>
+          <div class="filter">
+            <div class="filter-title mb-5">
+              <button class="filter-button all active">All</button>
+              <button class="filter-button filter-website">Website</button>
+              <button class="filter-button filter-design">Design</button>
+              <button class="filter-button filter-logo">Logo</button>
+            </div>
+            <!-- modal -->
+            <div style="display: none">
+              <div style="display: none" id="website_01">
+                <img src="img/filter/website_01.jpg" width="100%" />
+              </div>
+              <div style="display: none" id="website_02">
+                <img src="img/filter/website_02.jpg" width="100%" />
+              </div>
+              <div style="display: none" id="website_03">
+                <img src="img/filter/website_03.jpg" width="100%" />
+              </div>
+              <div style="display: none" id="website_04">
+                <img src="img/filter/website_04.jpg" width="100%" />
+              </div>
+              <div style="display: none" id="website_05">
+                <img src="img/filter/website_05.jpg" width="100%" />
+              </div>
+              <div style="display: none" id="website_06">
+                <img src="img/filter/website_06.jpg" width="100%" />
+              </div>
+              <div style="display: none" id="website_07">
+                <img src="img/filter/website_07.jpg" width="100%" />
+              </div>
+              <div style="display: none" id="website_08">
+                <img src="img/filter/website_08.jpg" width="100%" />
+              </div>
+              <div style="display: none" id="design_01">
+                <img src="img/filter/design_01.jpg" width="100%" />
+              </div>
+              <div style="display: none" id="logo_01">
+                <img src="img/filter/logo_01.png" width="100%" />
+              </div>
+              <div style="display: none" id="logo_02">
+                <img src="img/filter/logo_02.png" width="100%" />
+              </div>
+              <div style="display: none" id="logo_03">
+                <img src="img/filter/logo_03.png" width="100%" />
+              </div>
+              <div style="display: none" id="logo_04">
+                <img src="img/filter/logo_04.png" width="100%" />
+              </div>
+              <div style="display: none" id="logo_05">
+                <img src="img/filter/logo_05.png" width="100%" />
+              </div>
+            </div>
+            <!-- modal end -->
+            <div class="filter-container">
+              <div class="item filter-website">
+                <a data-fancybox data-src="#website_01" href="javascript:;">
+                  <img src="img/filter/website_01.jpg" alt="website" />
+                </a>
+              </div>
+              <div class="item filter-design">
+                <a data-fancybox data-src="#design_01" href="javascript:;">
+                  <img src="img/filter/design_01.jpg" alt="design" />
+                </a>
+              </div>
+              <div class="item filter-logo">
+                <a data-fancybox data-src="#logo_01" href="javascript:;">
+                  <img src="img/filter/logo_01.png" alt="logo" />
+                </a>
+              </div>
+              <div class="item filter-website">
+                <a data-fancybox data-src="#website_02" href="javascript:;">
+                  <img src="img/filter/website_02.jpg" alt="website" />
+                </a>
+              </div>
+              <div class="item filter-logo">
+                <a data-fancybox data-src="#logo_02" href="javascript:;">
+                  <img src="img/filter/logo_02.png" alt="logo" />
+                </a>
+              </div>
+              <div class="item filter-website filter-design">
+                <a data-fancybox data-src="#website_03" href="javascript:;">
+                  <img src="img/filter/website_03.jpg" alt="website" />
+                </a>
+              </div>
+              <div class="item filter-logo">
+                <a data-fancybox data-src="#logo_03" href="javascript:;">
+                  <img src="img/filter/logo_03.png" alt="logo" />
+                </a>
+              </div>
+              <div class="item filter-website filter-design">
+                <a data-fancybox data-src="#website_04" href="javascript:;">
+                  <img src="img/filter/website_04.jpg" alt="website" />
+                </a>
+              </div>
+              <div class="item filter-website">
+                <a data-fancybox data-src="#website_05" href="javascript:;">
+                  <img src="img/filter/website_05.jpg" alt="website" />
+                </a>
+              </div>
+              <div class="item filter-website">
+                <a data-fancybox data-src="#website_06" href="javascript:;">
+                  <img src="img/filter/website_06.jpg" alt="website" />
+                </a>
+              </div>
+              <div class="item filter-logo">
+                <a data-fancybox data-src="#logo_04" href="javascript:;">
+                  <img src="img/filter/logo_04.png" alt="logo" />
+                </a>
+              </div>
+              <div class="item filter-website filter-design">
+                <a data-fancybox data-src="#website_07" href="javascript:;">
+                  <img src="img/filter/website_07.jpg" alt="website" />
+                </a>
+              </div>
+              <div class="item filter-website">
+                <a data-fancybox data-src="#website_08" href="javascript:;">
+                  <img src="img/filter/website_08.jpg" alt="website" />
+                </a>
+              </div>
+              <div class="item filter-logo">
+                <a data-fancybox data-src="#logo_05" href="javascript:;">
+                  <img src="img/filter/logo_05.png" alt="logo" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- end WORKING SCHOLAR -->
-      </div>
-    </section>
+      </section>
 
-    <hr class="m-0" />
-    <!-- education -->
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="mb-5">Education</h2>
+      <hr class="m-0" />
+      <!-- Professional experience -->
+      <section
+        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
+        id="experience"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Professional Experience</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Cebu - Main Campus</h3>
-            <div class="subheading mb-3">
-              Bachelor of Science in Information Technology
+          <!-- Accenture Inc. -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Accenture Inc.</h3>
+              <span class="text-primary">October 2022 - Present</span>
+              <div class="subheading mb-3">
+                Multiplatform Frontend Developer Sr Analyst
+              </div>
+
+              <p class="content">
+                Developed scalable and reusable UI components and pages using
+                React JS, Next JS, Redux, and Storybook, improving application
+                consistency and maintainability.
+              </p>
+              <p class="content">
+                Converted Figma, Adobe XD, and PSD designs into responsive,
+                pixel-perfect, and cross-browser compatible web applications.
+              </p>
+              <p class="content">
+                Built and maintained Storybook component libraries to support
+                scalable frontend architecture and faster development workflows.
+              </p>
+              <p class="content">
+                Integrated RESTful and GraphQL APIs to deliver dynamic,
+                data-driven user experiences.
+              </p>
+              <p class="content">
+                Designed reusable API service layers with authentication
+                handling, error management, and performance optimization.
+              </p>
+              <p class="content">
+                Utilized AWS cloud services including DynamoDB, Lambda,
+                CloudFront, S3, API Gateway, and CloudTrail for API integration,
+                file management, cloud storage, monitoring, and application
+                delivery.
+              </p>
+
+              <p class="content">
+                Integrated frontend applications with AWS-powered serverless and
+                cloud-based architectures to improve scalability and
+                performance.
+              </p>
+
+              <p class="content">
+                Configured application builds, performed testing, and optimized
+                frontend performance and application architecture.
+              </p>
+
+              <p class="content">
+                Ensured all custom components and API integrations met business
+                requirements, accessibility standards, and performance
+                benchmarks.
+              </p>
+
+              <p class="content">
+                Led Agile sprint activities and coordinated backlog completion
+                to ensure timely delivery of project milestones.
+              </p>
+              <p class="content">
+                Served as Scrum Master for a GenAI project, facilitating sprint
+                planning, stand-ups, retrospectives, and team coordination.
+              </p>
+
+              <p class="content">
+                Conducted pull request (PR) reviews to maintain code quality,
+                scalability, and best practices before merging to development
+                branches.
+              </p>
+
+              <p class="content">
+                Managed CI/CD deployment pipelines and collaborated with DevOps
+                teams to streamline release processes.
+              </p>
+
+              <p class="content">
+                Collaborated closely with developers, UI/UX designers,
+                architects, and project managers to deliver high-quality
+                solutions.
+              </p>
+
+              <p class="content">
+                Identified project risks, dependencies, and technical issues,
+                proactively communicating solutions to stakeholders.
+              </p>
+
+              <p class="content">
+                Participated in project planning, technical discussions, and
+                architecture decisions before development implementation.
+              </p>
+
+              <p class="content">
+                Continuously improved technical expertise through company
+                training, certifications, and emerging technology research.
+              </p>
+
+              <ul class="content-skills">
+                <li>
+                  <b>Frontend: </b> HTML, CSS (SASS, Tailwind CSS, Bootstrap),
+                  JavaScript (React JS, Next JS), Redux, Storybook
+                </li>
+                <li>
+                  <b>Cloud & AWS Services: </b>AWS (DynamoDB, Lambda,
+                  CloudFront, S3, API Gateway, CloudTrail)
+                </li>
+                <li>
+                  <b>API & Data: </b>
+                  REST API, GraphQL, Postman, Swagger
+                </li>
+                <li>
+                  <b>Design Tools: </b>
+                  Figma, Adobe XD
+                </li>
+                <li>
+                  <b>DevOps & Collaboration: </b>
+                  Microsoft Azure, Git, JIRA, MS Teams
+                </li>
+              </ul>
+
+              <p class="content-project">Key Projects:</p>
+
+              <ul>
+                <li>
+                  <a href="#">Gen AI in TDLC - Training Labs</a>
+                </li>
+                <li></li>
+                <li><a href="#">IX DMO - Fincantieri</a></li>
+                <li><a href="#">ZATCA Digital Transformation</a></li>
+                <li><a href="#">MS-LH-Sitecore AVA-KDDI-Chubu Telecoms</a></li>
+                <li>
+                  <a href="#"
+                    >MS IPS - LH - AVA - BDR - Sitecore Capacity - BDR
+                    THERMEA</a
+                  >
+                </li>
+              </ul>
             </div>
-            <!-- <div>Computer Science - Web Development Track</div>
+          </div>
+          <!-- end Accenture Inc. -->
+
+          <!-- DNA Micro Software Inc. -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">DNA Micro Software Inc.</h3>
+              <span class="text-primary">July 2021 - October 2022</span>
+              <div class="subheading mb-3">UI/UX Designer and Developer</div>
+              <p class="content">
+                Take responsibility on responsive web, tablet and mobile views
+              </p>
+              <p class="content">
+                Testing and improving the design of the project
+              </p>
+              <p class="content">
+                Maintaining the appearance of project by enforcing content
+                standards
+              </p>
+              <p class="content">Determine how users interact with products</p>
+              <p class="content">
+                Integrated and consumed RESTful and GraphQL APIs to enable
+                dynamic data-driven applications.
+              </p>
+              <p class="content">
+                Designed reusable API services and handled authentication, error
+                handling, and performance optimization.
+              </p>
+              <p class="content">Identify and troubleshoot UI/UX problems</p>
+              <p class="content">
+                Transformed designs (PSD/XD/Figma) into responsive code.
+              </p>
+              <p class="content">Create new components</p>
+              <p class="content">Manage the Search Engine Optimization (SEO)</p>
+              <p class="content">
+                Optimized site performance, reducing load time by 40%
+              </p>
+              <p class="content">
+                Led a 10 - member team to deliver the UI/UX GoRentals, improving
+                user engagement by 30%
+              </p>
+
+              <ul class="content-skills">
+                <li><b>DESIGN: </b>Adobe XD, Figma, MockFlow</li>
+                <li>
+                  <b>LANGUAGE:</b>
+                  HTML, CSS (SASS, Tailwind), JS (React.JS, Next.JS, Express.JS,
+                  Pug.JS), Storybook, Git, GitHub, GitLab
+                </li>
+              </ul>
+
+              <p class="content-project">Key Projects:</p>
+
+              <ul>
+                <li>
+                  <a href="https://gorentals.com/" target="_blank"
+                    >gorentals.com</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.23point5.com/" target="_blank"
+                    >23point5.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end DNA Micro Software Inc. -->
+
+          <!-- Centrality Marketing Solutions -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Centrality Marketing Solutions</h3>
+              <span class="text-primary">May 2021 - July 2021</span>
+              <div class="subheading mb-3">Frontend Developer</div>
+
+              <p class="content">
+                Create company website from scratch using CMS
+              </p>
+              <p class="content">
+                Leading the work of a team to achieve all projects
+              </p>
+              <p class="content">
+                Maintaining company website, company system and client website
+              </p>
+              <p class="content">Design company website</p>
+              <p class="content">
+                Transformed designs (PSD/XD/Figma) into responsive code.
+              </p>
+              <p class="content">Manage hosting</p>
+              <p class="content">Make video presentation for the company</p>
+              <p class="content">Trouble shoot company technology</p>
+              <p class="content">Manage the Search Engine Optimization (SEO)</p>
+              <p class="content">Identify and troubleshoot UI/UX problems</p>
+
+              <ul class="content-skills">
+                <li>
+                  <b>CMS:</b>
+                  Wordpress
+                </li>
+                <li><b>PLUGINS:</b> Brizy, Elementor and more</li>
+                <li>
+                  <b> DESIGN: </b>
+                  Adobe Photoshop, Adobe Illustrator
+                </li>
+                <li>
+                  <b>LANGUAGE:</b>
+                  HTML, CSS, JS (Vue.JS), PHP (Laravel), Git, GitHub, AWS
+                </li>
+              </ul>
+              <p class="content-project">Key Projects:</p>
+
+              <ul>
+                <li>
+                  <a href="https://www.centralityms.com/" target="_blank"
+                    >centralityms.com</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.blog.centralityms.com/" target="_blank"
+                    >blog.centralityms.com</a
+                  >
+                </li>
+                <li>
+                  <a href="!" target="_blank">workforce</a>
+                </li>
+                <li>
+                  <a href="https://remaxprocebu.com/" target="_blank"
+                    >remaxprocebu</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end Centrality Marketing Solutions -->
+
+          <!-- HiPE Inc. -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">HiPE Japan Inc.</h3>
+              <span class="text-primary">November 2019 - May 2021</span>
+              <div class="subheading mb-3">Web Developer</div>
+              <p class="content">
+                Create new website and maintaining company website and client
+                website
+              </p>
+              <p class="content">
+                Setup and maintaining the company internet network
+              </p>
+              <p class="content">Manage hosting</p>
+              <p class="content">Trouble shoot company laptop</p>
+              <p class="content">
+                Transformed designs (PSD/XD/Figma) into responsive code.
+              </p>
+              <p class="content">Manage the Search Engine Optimization (SEO)</p>
+              <p class="content">
+                Optimized site performance, reducing load time by 50%
+              </p>
+              <ul class="content-skills">
+                <li>
+                  <b>CMS:</b>
+                  Wordpress
+                </li>
+                <li><b>PLUGINS:</b> ACF, Elementor, Ninja Form, and more</li>
+                <li>
+                  <b>DESIGN:</b> Adobe Photoshop, Adobe Lightroom, and Adobe
+                  Illustrator
+                </li>
+                <li>
+                  <b>LANGUAGE: </b>HTML, CSS (SASS, Bootstrap, Tailwind), PHP
+                  (Laravel), GIT, GitLab, GitHub, Yarn
+                </li>
+              </ul>
+              <p class="content-project">Key Projects:</p>
+              <ul>
+                <li>
+                  <a href="http://hipe.asia" target="_blank">hipe.asia</a>
+                </li>
+                <li>
+                  <a href="http://en.hipe.asia" target="_blank">en.hipe.asia</a>
+                </li>
+                <li>
+                  <a href="http://drp-estate.com" target="_blank"
+                    >drp-estate.com</a
+                  >
+                </li>
+                <li>
+                  <a href="http://delie.jp" target="_blank">delie.jp</a>
+                </li>
+                <li>
+                  <a href="http://bukkenkingdom.com" target="_blank"
+                    >bukkenkingdom.com</a
+                  >
+                </li>
+                <li>
+                  <a href="http://seicho-fudousan.com" target="_blank"
+                    >seicho-fudousan.com</a
+                  >
+                </li>
+                <li>
+                  <a href="http://suidobi-fudousan.com" target="_blank"
+                    >suidobi-fudousan.com</a
+                  >
+                </li>
+                <li>
+                  <a href="http://forest-ie.com" target="_blank"
+                    >forest-ie.com</a
+                  >
+                </li>
+                <li>
+                  <a href="http://momonoki-est.jp" target="_blank"
+                    >momonoki-est.jp</a
+                  >
+                </li>
+                <li>
+                  <a href="http://harmony-fudousan.jp" target="_blank"
+                    >harmony-fudousan.jp</a
+                  >
+                </li>
+                <li>
+                  <a href="http://daiken-rs-estate.jp" target="_blank"
+                    >daiken-rs-estate.jp</a
+                  >
+                </li>
+                <li>
+                  <a href="http://withbe.jp" target="_blank">withbe.jp</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end HiPE Inc. -->
+
+          <!-- KREDO IT ABROD INC. -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">KREDO IT ABROD INC.</h3>
+              <span class="text-primary">October 2018 - May 2019</span>
+              <div class="subheading mb-3">ON-THE JOB TRAINIG</div>
+              <p class="content">Technical Support for hardware and software</p>
+              <p class="content">Created Inventory System for the company</p>
+              <ul class="content-skills">
+                <li>
+                  <b>LANGUAGE:</b> HTML, CSS (Bootstrap), PHP (Laravel), SQL,
+                  GIT, GitHub
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end KREDO IT ABROD INC. -->
+
+          <!-- WORKING SCHOLAR -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">University of Cebu - Main Campus</h3>
+              <span class="text-primary">May 2015 - October 2019</span>
+              <div class="subheading mb-3">WORKING SCHOLAR</div>
+              <p class="content">Technical Support for hardware and software</p>
+              <p class="content">
+                Assisting students and teachers on computer laboratory
+              </p>
+              <p class="content">Sorting and filing documents</p>
+            </div>
+          </div>
+          <!-- end WORKING SCHOLAR -->
+        </div>
+      </section>
+
+      <hr class="m-0" />
+      <!-- education -->
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="education"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Education</h2>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">University of Cebu - Main Campus</h3>
+              <div class="subheading mb-3">
+                Bachelor of Science in Information Technology
+              </div>
+              <!-- <div>Computer Science - Web Development Track</div>
             <p>GPA: 2.23</p> -->
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2015 - October 2019</span>
+            </div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2015 - October 2019</span>
-          </div>
-        </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">
-              Immaculate Heart of Mary Academy - Minglanilla
-            </h3>
-            <div class="subheading mb-3">High School</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2011 - March 2015</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="m-0" />
-    <!-- cetificates -->
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Certificates</h2>
-        <div style="display: none" id="HP_IT_for_Business_Success">
-          <iframe class="pdf" src="img/certificate/HP IT for Business Success.pdf" width="800" height="500"></iframe>
-        </div>
-        <div style="display: none" id="HP_Introduction_to_Cybersecurity_Awareness">
-          <iframe class="pdf" src="img/certificate/HP Introduction to Cybersecurity Awareness.pdf" width="800"
-            height="500"></iframe>
-        </div>
-        <div style="display: none" id="HP_Agile_Project_Management">
-          <iframe class="pdf" src="img/certificate/HP Agile Project Management.pdf" width="800" height="500"></iframe>
-        </div>
-        <div style="display: none" id="AI_for_Beginners">
-          <iframe class="pdf" src="img/certificate/AI for Beginners.pdf" width="800" height="500"></iframe>
-        </div>
-        <div style="display: none" id="Scrum_Master_Scrum_for_the_Team">
-          <iframe class="pdf" src="img/certificate/Scrum Master_ Scrum for the Team.pdf" width="800"
-            height="500"></iframe>
-        </div>
-        <div style="display: none" id="Software_Quality_Assurance">
-          <iframe class="pdf" src="img/certificate/Software Quality Assurance.pdf" width="800" height="500"></iframe>
-        </div>
-        <div style="display: none" id="Agile_Organizations_Building_an_Agile_Culture">
-          <iframe class="pdf" src="img/certificate/Agile Organizations_ Building an Agile Culture.pdf" width="800"
-            height="500"></iframe>
-        </div>
-        <div style="display: none" id="CAPM_Agile_Adaptive_Project_Management">
-          <iframe class="pdf" src="img/certificate/CAPM®_ Agile Adaptive Project Management.pdf" width="800"
-            height="500"></iframe>
-        </div>
-        <div style="display: none" id="Data_Access_Governance_Policies_Data_Classification_Encryption_Monitoring">
-          <iframe class="pdf"
-            src="img/certificate/Data Access & Governance Policies_ Data Classification, Encryption, & Monitoring.pdf"
-            width="800" height="500"></iframe>
-        </div>
-        <div style="display: none" id="Responsible_Use_of_AI">
-          <iframe class="pdf" src="img/certificate/Responsible Use of AI.pdf" width="800" height="500"></iframe>
-        </div>
-        <div style="display: none" id="Leading_Security_Teams_for_GenAI_Solutions_Use_of_Generative_AI">
-          <iframe class="pdf" src="img/certificate/Leading Security Teams for GenAI Solutions_ Use of Generative AI.pdf"
-            width="800" height="500"></iframe>
-        </div>
-        <div style="display: none" id="Exploring_Business_Process_Automation">
-          <iframe class="pdf" src="img/certificate/Exploring Business Process Automation.pdf" width="800"
-            height="500"></iframe>
-        </div>
-        <div style="display: none" id="Using_Robots_and_RPA_in_the_Workplace">
-          <iframe class="pdf" src="img/certificate/Using Robots and RPA in the Workplace.pdf" width="800"
-            height="500"></iframe>
-        </div>
-        <div style="display: none" id="Software_Design_and_Development_Design_Patterns_SOLID_Principles">
-          <iframe class="pdf"
-            src="img/certificate/Software Design and Development_ Design Patterns & SOLID Principles.pdf" width="800"
-            height="500"></iframe>
-        </div>
-        <div style="display: none" id="Effective_Team_Communication">
-          <iframe class="pdf" src="img/certificate/Effective Team Communication.pdf" width="800" height="500"></iframe>
-        </div>
-        <div style="display: none" id="Exploring_Project_Management_Then_and_Now">
-          <iframe class="pdf" src="img/certificate/Exploring Project Management, Then and Now (2021 Update).pdf"
-            width="800" height="500"></iframe>
-        </div>
-        <div style="display: none" id="Embracing_Agile_at_Scale">
-          <iframe class="pdf" src="img/certificate/Embracing Agile at Scale.pdf" width="800" height="500"></iframe>
-        </div>
-        <div style="display: none" id="Agile_Project_Planning">
-          <iframe class="pdf" src="img/certificate/Agile Project Planning.pdf" width="800" height="500"></iframe>
-        </div>
-        <div style="display: none" id="Digital_Garage">
-          <img src="img/certificate/Google_Digital_Garage_Certificate.jpg" width="80%" />
-        </div>
-        <div style="display: none" id="system_network">
-          <img src="img/certificate/TESDA_Maintain Computer Systems and Networks_Certificate of Completion.jpg"
-            width="80%" />
-        </div>
-        <div style="display: none" id="Technopreneurship">
-          <img src="img/certificate/TESDA_SMARTtechno101_Certificate of Completion.jpg" width="80%" />
-        </div>
-        <div style="display: none" id="Certificate-MOOC-2018">
-          <img src="img/certificate/Certificate-MOOC 2018.jpg" width="80%" />
-        </div>
-        <div style="display: none" id="5th_UC_ICT_201">
-          <img src="img/certificate/5th UC_ICT_2017.jpg" width="80%" />
-        </div>
-        <div style="display: none" id="4th_UC_ICT_Congress_2016">
-          <img src="img/certificate/4th UC_ICT Congress_2016.jpg" width="80%" />
-        </div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#HP_IT_for_Business_Success" href="javascript:;">
-              IT for Business Success | HP
-              (September 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#HP_Introduction_to_Cybersecurity_Awareness" href="javascript:;">
-              Introduction to Cybersecurity Awareness | HP
-              (September 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#HP_Agile_Project_Management" href="javascript:;">
-              Agile Project Management | HP
-              (September 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#AI_for_Beginners" href="javascript:;">
-              AI for Beginners | HP
-              (September 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Scrum_Master_Scrum_for_the_Team" href="javascript:;">
-              Scrum Master: Scrum for the Team | Percipio and Accenture
-              (September 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Software_Quality_Assurance" href="javascript:;">
-              Software Quality Assurance | Percipio and Accenture
-              (September 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Agile_Organizations_Building_an_Agile_Culture " href="javascript:;">
-              Agile Organizations: Building an Agile Culture | Percipio and Accenture
-              (September 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#CAPM_Agile_Adaptive_Project_Management" href="javascript:;">
-              CAPM: Agile Adaptive Project Management | Percipio and Accenture
-              (August 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Data_Access_Governance_Policies_Data_Classification_Encryption_Monitoring"
-              href="javascript:;">
-              Data Access & Governance Policies: Data Classification, Encryption, & Monitoring | Percipio and Accenture
-              (June 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Responsible_Use_of_AI " href="javascript:;">
-              Responsible Use of AI | Percipio and Accenture (June 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Leading_Security_Teams_for_GenAI_Solutions_Use_of_Generative_AI"
-              href="javascript:;">
-              Leading Security Teams for GenAI Solutions: Use of Generative AI | Percipio and Accenture (June 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Exploring_Business_Process_Automation" href="javascript:;">
-              Exploring Business Process Automation | Percipio and Accenture (June 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Using_Robots_and_RPA_in_the_Workplace" href="javascript:;">
-              Using Robots and RPA in the Workplace | Percipio and Accenture (June 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Software_Design_and_Development_Design_Patterns_SOLID_Principles"
-              href="javascript:;">
-              Software Design and Development: Design Patterns & SOLID Principles | Percipio and Accenture (June 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Effective_Team_Communication" href="javascript:;">
-              Effective Team Communication | Percipio and Accenture (June 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Exploring_Project_Management_Then_and_Now" href="javascript:;">
-              Exploring Project Management, Then and Now (2021 update) | Percipio and Accenture (June 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Embracing_Agile_at_Scale" href="javascript:;">
-              Embracing Agile at Scale | Percipio and Accenture (June 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Agile_Project_Planning" href="javascript:;">
-              Agile Project Planning | Percipio and Accenture (June 2025)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Digital_Garage" href="javascript:;">
-              The Fundamentals of Digital Marketing | Google (August 2021)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#system_network" href="javascript:;">
-              Maintain Computer Systems and Networks | TESDA (August 2021)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Technopreneurship" href="javascript:;">
-              SMART Technopreneurship 101 | TESDA (August 2021)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#Certificate-MOOC-2018" href="javascript:;">
-              Building Entrepreneurial Ecosystem to Enhance Higher Education
-              Value-Added for Better Graduate Employability | (BEEHIVE) - MOOC
-              (October 2018)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#5th_UC_ICT_201" href="javascript:;">
-              5th UC-ICT Congress “Sharpening Junior Mobile Technologists” |
-              University of Cebu (August 2017)
-            </a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-certificate text-warning"></i>
-            <a data-fancybox data-src="#4th_UC_ICT_Congress_2016" href="javascript:;">
-              4th UC-ICT Congress “Shaping up Creative Minds through Great UX
-              Design” | University of Cebu (August 2016)
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <hr class="m-0" />
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="Reference">
-      <div class="w-100">
-        <h2 class="mb-5">Reference</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Mr. John Rosell Magalso
-            </h3>
-            <span class="text-primary">Outsourced PH</span>
-            <div class="subheading" style="text-transform: none;">Contact: <a href="tel:+639618271956">+63 961 827
-                1956</a></div>
-            <div class="subheading mb-3" style="text-transform: none;">Email: <a
-                href="mailto:john.rosell.magalso@gmail.com">john.rosell.magalso@gmail.com</a>
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">
+                Immaculate Heart of Mary Academy - Minglanilla
+              </h3>
+              <div class="subheading mb-3">High School</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2011 - March 2015</span>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Ms. Ma Thania Sinogaya
-            </h3>
-            <span class="text-primary">DNA Micro
-            </span>
-            <div class="subheading" style="text-transform: none;">Contact: <a href="tel:+639618311801">+63 961 831
-                1801</a></div>
-            <div class="subheading mb-3" style="text-transform: none;">Email: <a
-                href="mailto:ma.thania.sinogaya@gmail.com">ma.thania.sinogaya@gmail.com</a>
+      <hr class="m-0" />
+      <!-- cetificates -->
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="awards"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Certificates</h2>
+          <div style="display: none" id="HP_IT_for_Business_Success">
+            <iframe
+              class="pdf"
+              src="img/certificate/HP IT for Business Success.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div
+            style="display: none"
+            id="HP_Introduction_to_Cybersecurity_Awareness"
+          >
+            <iframe
+              class="pdf"
+              src="img/certificate/HP Introduction to Cybersecurity Awareness.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div style="display: none" id="HP_Agile_Project_Management">
+            <iframe
+              class="pdf"
+              src="img/certificate/HP Agile Project Management.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div style="display: none" id="AI_for_Beginners">
+            <iframe
+              class="pdf"
+              src="img/certificate/AI for Beginners.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div style="display: none" id="Scrum_Master_Scrum_for_the_Team">
+            <iframe
+              class="pdf"
+              src="img/certificate/Scrum Master_ Scrum for the Team.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div style="display: none" id="Software_Quality_Assurance">
+            <iframe
+              class="pdf"
+              src="img/certificate/Software Quality Assurance.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div
+            style="display: none"
+            id="Agile_Organizations_Building_an_Agile_Culture"
+          >
+            <iframe
+              class="pdf"
+              src="img/certificate/Agile Organizations_ Building an Agile Culture.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div
+            style="display: none"
+            id="CAPM_Agile_Adaptive_Project_Management"
+          >
+            <iframe
+              class="pdf"
+              src="img/certificate/CAPM®_ Agile Adaptive Project Management.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div
+            style="display: none"
+            id="Data_Access_Governance_Policies_Data_Classification_Encryption_Monitoring"
+          >
+            <iframe
+              class="pdf"
+              src="img/certificate/Data Access & Governance Policies_ Data Classification, Encryption, & Monitoring.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div style="display: none" id="Responsible_Use_of_AI">
+            <iframe
+              class="pdf"
+              src="img/certificate/Responsible Use of AI.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div
+            style="display: none"
+            id="Leading_Security_Teams_for_GenAI_Solutions_Use_of_Generative_AI"
+          >
+            <iframe
+              class="pdf"
+              src="img/certificate/Leading Security Teams for GenAI Solutions_ Use of Generative AI.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div style="display: none" id="Exploring_Business_Process_Automation">
+            <iframe
+              class="pdf"
+              src="img/certificate/Exploring Business Process Automation.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div style="display: none" id="Using_Robots_and_RPA_in_the_Workplace">
+            <iframe
+              class="pdf"
+              src="img/certificate/Using Robots and RPA in the Workplace.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div
+            style="display: none"
+            id="Software_Design_and_Development_Design_Patterns_SOLID_Principles"
+          >
+            <iframe
+              class="pdf"
+              src="img/certificate/Software Design and Development_ Design Patterns & SOLID Principles.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div style="display: none" id="Effective_Team_Communication">
+            <iframe
+              class="pdf"
+              src="img/certificate/Effective Team Communication.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div
+            style="display: none"
+            id="Exploring_Project_Management_Then_and_Now"
+          >
+            <iframe
+              class="pdf"
+              src="img/certificate/Exploring Project Management, Then and Now (2021 Update).pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div style="display: none" id="Embracing_Agile_at_Scale">
+            <iframe
+              class="pdf"
+              src="img/certificate/Embracing Agile at Scale.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div style="display: none" id="Agile_Project_Planning">
+            <iframe
+              class="pdf"
+              src="img/certificate/Agile Project Planning.pdf"
+              width="800"
+              height="500"
+            ></iframe>
+          </div>
+          <div style="display: none" id="Digital_Garage">
+            <img
+              src="img/certificate/Google_Digital_Garage_Certificate.jpg"
+              width="80%"
+            />
+          </div>
+          <div style="display: none" id="system_network">
+            <img
+              src="img/certificate/TESDA_Maintain Computer Systems and Networks_Certificate of Completion.jpg"
+              width="80%"
+            />
+          </div>
+          <div style="display: none" id="Technopreneurship">
+            <img
+              src="img/certificate/TESDA_SMARTtechno101_Certificate of Completion.jpg"
+              width="80%"
+            />
+          </div>
+          <div style="display: none" id="Certificate-MOOC-2018">
+            <img src="img/certificate/Certificate-MOOC 2018.jpg" width="80%" />
+          </div>
+          <div style="display: none" id="5th_UC_ICT_201">
+            <img src="img/certificate/5th UC_ICT_2017.jpg" width="80%" />
+          </div>
+          <div style="display: none" id="4th_UC_ICT_Congress_2016">
+            <img
+              src="img/certificate/4th UC_ICT Congress_2016.jpg"
+              width="80%"
+            />
+          </div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#HP_IT_for_Business_Success"
+                href="javascript:;"
+              >
+                IT for Business Success | HP (September 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#HP_Introduction_to_Cybersecurity_Awareness"
+                href="javascript:;"
+              >
+                Introduction to Cybersecurity Awareness | HP (September 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#HP_Agile_Project_Management"
+                href="javascript:;"
+              >
+                Agile Project Management | HP (September 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a data-fancybox data-src="#AI_for_Beginners" href="javascript:;">
+                AI for Beginners | HP (September 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Scrum_Master_Scrum_for_the_Team"
+                href="javascript:;"
+              >
+                Scrum Master: Scrum for the Team | Percipio and Accenture
+                (September 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Software_Quality_Assurance"
+                href="javascript:;"
+              >
+                Software Quality Assurance | Percipio and Accenture (September
+                2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Agile_Organizations_Building_an_Agile_Culture "
+                href="javascript:;"
+              >
+                Agile Organizations: Building an Agile Culture | Percipio and
+                Accenture (September 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#CAPM_Agile_Adaptive_Project_Management"
+                href="javascript:;"
+              >
+                CAPM: Agile Adaptive Project Management | Percipio and Accenture
+                (August 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Data_Access_Governance_Policies_Data_Classification_Encryption_Monitoring"
+                href="javascript:;"
+              >
+                Data Access & Governance Policies: Data Classification,
+                Encryption, & Monitoring | Percipio and Accenture (June 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Responsible_Use_of_AI "
+                href="javascript:;"
+              >
+                Responsible Use of AI | Percipio and Accenture (June 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Leading_Security_Teams_for_GenAI_Solutions_Use_of_Generative_AI"
+                href="javascript:;"
+              >
+                Leading Security Teams for GenAI Solutions: Use of Generative AI
+                | Percipio and Accenture (June 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Exploring_Business_Process_Automation"
+                href="javascript:;"
+              >
+                Exploring Business Process Automation | Percipio and Accenture
+                (June 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Using_Robots_and_RPA_in_the_Workplace"
+                href="javascript:;"
+              >
+                Using Robots and RPA in the Workplace | Percipio and Accenture
+                (June 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Software_Design_and_Development_Design_Patterns_SOLID_Principles"
+                href="javascript:;"
+              >
+                Software Design and Development: Design Patterns & SOLID
+                Principles | Percipio and Accenture (June 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Effective_Team_Communication"
+                href="javascript:;"
+              >
+                Effective Team Communication | Percipio and Accenture (June
+                2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Exploring_Project_Management_Then_and_Now"
+                href="javascript:;"
+              >
+                Exploring Project Management, Then and Now (2021 update) |
+                Percipio and Accenture (June 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Embracing_Agile_at_Scale"
+                href="javascript:;"
+              >
+                Embracing Agile at Scale | Percipio and Accenture (June 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Agile_Project_Planning"
+                href="javascript:;"
+              >
+                Agile Project Planning | Percipio and Accenture (June 2025)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a data-fancybox data-src="#Digital_Garage" href="javascript:;">
+                The Fundamentals of Digital Marketing | Google (August 2021)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a data-fancybox data-src="#system_network" href="javascript:;">
+                Maintain Computer Systems and Networks | TESDA (August 2021)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Technopreneurship"
+                href="javascript:;"
+              >
+                SMART Technopreneurship 101 | TESDA (August 2021)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#Certificate-MOOC-2018"
+                href="javascript:;"
+              >
+                Building Entrepreneurial Ecosystem to Enhance Higher Education
+                Value-Added for Better Graduate Employability | (BEEHIVE) - MOOC
+                (October 2018)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a data-fancybox data-src="#5th_UC_ICT_201" href="javascript:;">
+                5th UC-ICT Congress “Sharpening Junior Mobile Technologists” |
+                University of Cebu (August 2017)
+              </a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              <a
+                data-fancybox
+                data-src="#4th_UC_ICT_Congress_2016"
+                href="javascript:;"
+              >
+                4th UC-ICT Congress “Shaping up Creative Minds through Great UX
+                Design” | University of Cebu (August 2016)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="m-0" />
+
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="Reference"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Reference</h2>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Mr. John Rosell Magalso</h3>
+              <span class="text-primary"
+                >Outsourced PH – Senior Frontend Developer</span
+              >
+              <div class="subheading" style="text-transform: none">
+                Contact: <a href="tel:+639618271956">+63 961 827 1956</a>
+              </div>
+              <div class="subheading mb-3" style="text-transform: none">
+                Email:
+                <a href="mailto:john.rosell.magalso@gmail.com"
+                  >john.rosell.magalso@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Mrs. Licelyn Labrador</h3>
+              <span class="text-primary"
+                >Accenture Inc PH – Business Architecture Associate Manager |
+                People Lead
+              </span>
+              <div class="subheading" style="text-transform: none">
+                Contact: <a href="tel:+639277929739">+63 927 792 9739</a>
+              </div>
+              <div class="subheading mb-3" style="text-transform: none">
+                Email:
+                <a href="mailto:licelyn.c.labrador@accenture.com"
+                  >licelyn.c.labrador@accenture.com</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Mrs. Theresa Wingkee</h3>
+              <span class="text-primary"
+                >Accenture Inc PH – User Exp Engineering Associate Manager |
+                People Lead</span
+              >
+              <div class="subheading mb-3" style="text-transform: none">
+                Email:
+                <a href="mailto:maria.t.wingkee@accenture.com"
+                  >maria.t.wingkee@accenture.com</a
+                >
+              </div>
             </div>
           </div>
         </div>
+      </section>
+    </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Mr. Kevin Rey Co</h3>
-            <span class="text-primary">Operation Manager – Fat House Distributors LLC</span>
-            <div class="subheading" style="text-transform: none;">Contact: <a href="tel:+639959301450">+63 995 930
-                1450</a></div>
-            <div class="subheading mb-3" style="text-transform: none;">Email: <a
-                href="mailto:kevinreyco@gmail.com">kevinreyco@gmail.com</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
+    <!-- popup image -->
+    <!-- <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
 
-  <!-- popup image -->
-  <!-- <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script> -->
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/jquery.fancybox.js"></script>
-
-  <!-- filter project -->
-  <script src="js/filter-project.js"></script>
-</body>
-
+    <!-- filter project -->
+    <script src="js/filter-project.js"></script>
+  </body>
 </html>

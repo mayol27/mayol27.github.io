@@ -6,18 +6,18 @@ var checkClass = function () {
 };
 
 // Category filters
-$(".all").click(function () {
+$(".filter-button.all").click(function () {
   checkClass();
 });
-$(".filter-website").click(function () {
+$(".filter-button.filter-website").click(function () {
   checkClass();
   $(".item:not(.filter-website)").toggleClass("hide");
 });
-$(".filter-design").click(function () {
+$(".filter-button.filter-design").click(function () {
   checkClass();
   $(".item:not(.filter-design)").toggleClass("hide");
 });
-$(".filter-logo").click(function () {
+$(".filter-button.filter-logo").click(function () {
   checkClass();
   $(".item:not(.filter-logo)").toggleClass("hide");
 });
